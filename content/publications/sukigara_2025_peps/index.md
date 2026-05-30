@@ -38,7 +38,5 @@ tags:
 
 featured: false
 
-links:
-  - type: doi
-    url: https://doi.org/10.1186/s40645-025-00776-6
 ---
+DOI: [10.1186/s40645-025-00776-6](https://doi.org/10.1186/s40645-025-00776-6)
