@@ -1,6 +1,7 @@
 schema: hugoblox/author/v1
 slug: me
 is_owner: true
+avatar: authors/me.jpg
 name:
   display: 森 香穂 (Kaho MORI)
   given: Kaho
