@@ -1,6 +1,1 @@
-/* ダークモード時にヒーロー背景画像を暗くする */
-[data-theme="dark"] .wg-hero .bg-image,
-.dark .wg-hero .bg-image,
-[class*="dark"] .wg-hero .bg-image {
-  filter: brightness(0.5) !important;
-}
+/* custom styles */
