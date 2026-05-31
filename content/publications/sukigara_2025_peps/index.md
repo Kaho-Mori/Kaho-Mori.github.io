@@ -34,12 +34,10 @@ publication_types: ["article-journal"]
 
 # Publication metadata — structured fields used by citation styles and BibTeX export.
 publication:
-  name: "*Progress in Earth and Planetary Science*"
+  name: '*Progress in Earth and Planetary Science*'
   volume: 12
   issue: 105
 
-peer_reviewed: true
-open_access: true
 
 # Awards, honors, and recognitions. Surfaced as badges on the page and in listings.
 # Note: a Test of Time award years after publication uses an explicit `date` that differs from the page date.
@@ -76,11 +74,3 @@ slides: ""
 ---
 DOI: [10.1186/s40645-025-00776-6](https://doi.org/10.1186/s40645-025-00776-6)
 
-
-> [!NOTE]
-> Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-
-> [!NOTE]
-> Create your slides in Markdown - click the *Slides* button to check out the example.
-
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
