@@ -2,5 +2,5 @@
 [data-theme="dark"] .wg-hero .bg-image,
 .dark .wg-hero .bg-image,
 [class*="dark"] .wg-hero .bg-image {
-  filter: brightness(0.35) !important;
+  filter: brightness(0.5) !important;
 }

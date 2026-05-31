@@ -16,12 +16,12 @@ sections:
     design:
       background:
         image:
-          filename: hero-bg.jpg
+          filename: hero-light.jpg
           filename_dark: hero-bg.jpg
           filters:
-            brightness: 0.7
+            brightness: 0.75
           filters_dark:
-            brightness: 0.35
+            brightness: 0.5
           size: cover
           position: center
           parallax: false
