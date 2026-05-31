@@ -29,6 +29,7 @@ This site is built with [Hugo](https://gohugo.io/) using the [HugoBlox Academic 
 
 - Template: [HugoBlox Academic CV](https://github.com/HugoBlox/hugo-theme-academic-cv) (MIT License)
 - Theme engine: [HugoBlox Kit](https://github.com/HugoBlox/kit)
+- HugoBlox homepage: [HugoBlox](https://hugoblox.com/)
 
 ## Local Development
 
