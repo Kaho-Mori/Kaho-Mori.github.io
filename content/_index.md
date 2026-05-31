@@ -24,12 +24,45 @@ sections:
         shape: circle
   - block: markdown
     content:
-      title: '🔬 My Research'
+      title: 'My Research'
       subtitle: ''
       text: |-
-        I am a Ph.D. student at the Graduate School of Frontier Sciences, The University of Tokyo, and the Atmosphere and Ocean Research Institute. My research focuses on marine microbiology and microbial ecology.
+        I am a Ph.D. student at the Graduate School of Frontier Sciences, The University of Tokyo, and the Atmosphere and Ocean Research Institute. My research focuses on marine microbiology and microbial ecology — particularly how microbial communities in the ocean respond to physical forcing and contribute to biogeochemical cycles.
 
-        Please feel free to reach out for collaboration!
+        Feel free to [reach out](mailto:) for collaboration!
     design:
+      columns: '1'
+  - block: collection
+    id: papers
+    content:
+      title: Recent Papers
+      filters:
+        folders:
+          - publications
+      count: 3
+    design:
+      view: citation
+      columns: '1'
+  - block: collection
+    id: talks
+    content:
+      title: Recent Talks
+      filters:
+        folders:
+          - events
+      count: 3
+    design:
+      view: card
+      columns: '1'
+  - block: collection
+    id: news
+    content:
+      title: Recent Posts
+      filters:
+        folders:
+          - blog
+      count: 3
+    design:
+      view: card
       columns: '1'
 ---

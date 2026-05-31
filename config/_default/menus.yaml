@@ -8,23 +8,17 @@ main:
     url: /
     weight: 10
   - name: Papers
-    url: /#papers
-    weight: 11
+    url: /publications/
+    weight: 20
   - name: Talks
-    url: /#talks
-    weight: 12
-  - name: News
-    url: /#news
-    weight: 13
+    url: /events/
+    weight: 30
   - name: Blog
     url: /blog/
-    weight: 14
+    weight: 40
   - name: Experience
-    url: experience/
-    weight: 20
-  - name: Fund
+    url: /experience/
+    weight: 50
+  - name: Funding
     url: /fund/
-    weight: 25
-  - name: Projects
-    url: projects/
-    weight: 30
+    weight: 60
