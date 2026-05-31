@@ -46,10 +46,10 @@ sections:
   - block: collection
     id: talks
     content:
-      title: Recent Talks
+      title: Recent Presentations
       filters:
         folders:
-          - events
+          - presentations
       count: 3
     design:
       view: card
