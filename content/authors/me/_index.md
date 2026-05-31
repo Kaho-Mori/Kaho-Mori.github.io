@@ -1,5 +1,5 @@
 ---
-title: 森 香穂 (Kaho MORI)
+title: Kaho MORI
 
 first_name: Kaho
 last_name: Mori
