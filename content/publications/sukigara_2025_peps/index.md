@@ -43,11 +43,8 @@ tags:
 
 featured: false
 
-url_pdf: ''
-
 doi: '10.1186/s40645-025-00776-6'
 
-# featured.jpg を同フォルダに置くと論文カード画像として表示されます
 image:
   caption: 'Water mass classification at station KEO'
   focal_point: 'Center'

@@ -33,12 +33,6 @@ tags:
 
 featured: false
 
-url_pdf: ''
-url_dataset: ''
-url_code: ''
-
-# featured.jpg を同フォルダに置くと論文カード画像として表示されます
-# 例: 論文の代表図、観測写真など
 image:
   caption: ''
   focal_point: 'Center'
