@@ -97,22 +97,22 @@ skills:
         icon: chart-bar
 
 # ===== 受賞・資金 =====
+# 追加する場合は以下のブロックをコピーして追記してください
 awards:
-  - title: '受賞名（例: 学会優秀発表賞）'
+  - title: '学会優秀発表賞（例）'
     url: ''
     date: '2025-10-01'
-    awarder: '授与団体名（例: 日本微生物生態学会）'
-    icon: ''
+    awarder: '日本微生物生態学会'
+    icon: trophy
     summary: |
-      受賞内容の説明（任意）。
-  - title: 'Grant-in-Aid for JSPS Research Fellow (DC1/DC2)'
+      実際の受賞に合わせて更新してください。
+  - title: 'Grant-in-Aid for JSPS Research Fellow (DC2)'
     url: 'https://www.jsps.go.jp/english/e-pd/'
     date: '2025-04-01'
     awarder: 'Japan Society for the Promotion of Science (JSPS)'
-    icon: ''
+    icon: academic-cap
     summary: |
-      Research topic: "Title of Research Project"
-      Amount: ¥X,XXX,000
+      Research topic: 短期的物理変動が西部北太平洋の細菌プランクトン群集に与える影響の解明
 
 # ===== 言語 =====
 languages:
