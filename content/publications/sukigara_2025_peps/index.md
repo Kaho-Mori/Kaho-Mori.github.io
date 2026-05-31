@@ -43,8 +43,6 @@ tags:
 
 featured: false
 
-doi: '10.1186/s40645-025-00776-6'
-
 image:
   caption: 'Water mass classification at station KEO'
   focal_point: 'Center'
@@ -53,6 +51,8 @@ image:
 projects: []
 slides: ''
 ---
+
+**DOI**: [10.1186/s40645-025-00776-6](https://doi.org/10.1186/s40645-025-00776-6)
 
 ## 概要（日本語）
 
