@@ -15,7 +15,8 @@ publishDate: '2024-03-01T00:00:00Z'
 # 論文タイプ: article-journal / book-chapter / thesis / preprint / conference-paper
 publication_types: ['thesis']
 
-publication: 'Graduate School of Frontier Sciences, The University of Tokyo'
+publication:
+  name: 'Graduate School of Frontier Sciences, The University of Tokyo'
 publication_short: 'Master Thesis, UTokyo'
 
 abstract: |
@@ -33,11 +34,8 @@ tags:
 featured: false
 
 url_pdf: ''
-url_source: ''
 url_dataset: ''
 url_code: ''
-
-# doi: ''
 
 # featured.jpg を同フォルダに置くと論文カード画像として表示されます
 # 例: 論文の代表図、観測写真など

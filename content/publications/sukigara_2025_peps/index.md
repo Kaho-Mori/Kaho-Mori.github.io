@@ -44,7 +44,6 @@ tags:
 featured: false
 
 url_pdf: ''
-url_source: 'https://doi.org/10.1186/s40645-025-00776-6'
 
 doi: '10.1186/s40645-025-00776-6'
 
