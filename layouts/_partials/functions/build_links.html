@@ -1,0 +1,84 @@
+{{/*
+  Override of HugoBlox build_links.html
+  Workaround for nil map bug in upstream v0.0.0-20260527025321 when cite.bib exists.
+  Builds a link list from front matter fields only (no cite.bib resource scanning).
+*/}}
+{{- $page := .page -}}
+{{- $isList := .is_list | default 0 -}}
+{{- $links := slice -}}
+{{- $seen := newScratch -}}
+
+{{/* Process author-provided links array */}}
+{{- range $page.Params.links -}}
+  {{- $url := .url | default "" -}}
+  {{- $type := .type | default "custom" -}}
+  {{- $label := .name | default .label | default "" -}}
+  {{- $key := printf "%s::%s" $type $url -}}
+  {{- if and $url (not ($seen.Get $key)) -}}
+    {{- $seen.Set $key true -}}
+    {{- $links = $links | append (dict
+      "type" $type
+      "url" $url
+      "icon" (.icon | default "link")
+      "labelKey" ""
+      "label" $label
+      "contexts" (slice "page" "list")
+      "rel" ""
+    ) -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* DOI link from doi field */}}
+{{- with $page.Params.doi -}}
+  {{- $url := printf "https://doi.org/%s" . -}}
+  {{- $key := printf "doi::%s" $url -}}
+  {{- if not ($seen.Get $key) -}}
+    {{- $seen.Set $key true -}}
+    {{- $links = $links | append (dict
+      "type" "doi"
+      "url" $url
+      "icon" "link"
+      "labelKey" "btn_doi"
+      "label" ""
+      "contexts" (slice "page" "list")
+      "rel" ""
+    ) -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* PDF link */}}
+{{- with $page.Params.url_pdf -}}
+  {{- $key := printf "pdf::%s" . -}}
+  {{- if not ($seen.Get $key) -}}
+    {{- $seen.Set $key true -}}
+    {{- $links = $links | append (dict
+      "type" "pdf"
+      "url" .
+      "icon" "file-pdf"
+      "labelKey" "btn_pdf"
+      "label" ""
+      "contexts" (slice "page" "list")
+      "rel" ""
+    ) -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* Cite button from cite.bib resource */}}
+{{- $citeRes := $page.Resources.GetMatch "cite.bib" -}}
+{{- if $citeRes -}}
+  {{- $key := "cite::cite.bib" -}}
+  {{- if not ($seen.Get $key) -}}
+    {{- $seen.Set $key true -}}
+    {{- $links = $links | append (dict
+      "type" "cite"
+      "url" $citeRes.RelPermalink
+      "icon" "graduation-cap"
+      "labelKey" "btn_cite"
+      "label" ""
+      "contexts" (slice "page" "list")
+      "rel" ""
+    ) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return $links -}}
