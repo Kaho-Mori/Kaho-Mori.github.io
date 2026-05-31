@@ -15,8 +15,13 @@ sections:
         interests: ''
     design:
       background:
-        gradient_mesh:
-          enable: true
+        image:
+          filename: hero-bg.jpg
+          filters:
+            brightness: 0.6
+          size: cover
+          position: center
+          parallax: false
       name:
         size: md
       avatar:
