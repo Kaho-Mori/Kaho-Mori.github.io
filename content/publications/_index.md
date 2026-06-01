@@ -12,8 +12,8 @@ sections:
           - publications
         publication_type: article-journal
     design:
-      view: citation
-      columns: '1'
+      view: article-grid
+      columns: '2'
 
   - block: collection
     content:
@@ -23,8 +23,8 @@ sections:
           - publications
         publication_type: preprint
     design:
-      view: citation
-      columns: '1'
+      view: article-grid
+      columns: '2'
 
   - block: collection
     content:
@@ -34,6 +34,6 @@ sections:
           - publications
         publication_type: other
     design:
-      view: citation
-      columns: '1'
+      view: date-title-summary
+      columns: '2'
 ---
