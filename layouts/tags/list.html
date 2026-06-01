@@ -1,0 +1,47 @@
+{{ define "main" }}
+{{ $tag := .Data.Term }}
+{{ $blog_pages := where .Pages "Section" "blog" | default slice }}
+
+<div class="container mx-auto px-6 py-12 max-w-5xl">
+
+  <div class="mb-2 text-sm text-gray-500 dark:text-gray-400">
+    <a href="/blog/" class="hover:underline">Blog</a> › Tag
+  </div>
+
+  <h1 class="text-4xl font-bold mb-8 text-gray-900 dark:text-white">
+    # {{ $tag }}
+    <span class="text-lg font-normal text-gray-400 ml-2">{{ len $blog_pages }} post{{ if ne (len $blog_pages) 1 }}s{{ end }}</span>
+  </h1>
+
+  {{ if $blog_pages }}
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    {{ range $blog_pages.ByDate.Reverse }}
+    <div class="group flex flex-col rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+      {{ with .Resources.GetMatch "featured*" }}
+      <a href="{{ $.RelPermalink }}" tabindex="-1">
+        <div class="h-36 overflow-hidden">
+          <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+        </div>
+      </a>
+      {{ end }}
+      <div class="p-5 flex flex-col gap-2 flex-1">
+        <h2 class="text-base font-semibold text-gray-900 dark:text-white line-clamp-2">
+          <a href="{{ .RelPermalink }}" class="hover:text-primary-600 dark:hover:text-primary-400">{{ .Title }}</a>
+        </h2>
+        <p class="text-xs text-gray-500 dark:text-gray-400">{{ .Date | time.Format "Jan 2, 2006" }}</p>
+        {{ with .Summary }}
+        <p class="text-sm text-gray-600 dark:text-gray-300 line-clamp-3">{{ . | plainify }}</p>
+        {{ end }}
+        <a href="{{ .RelPermalink }}" class="mt-auto inline-flex items-center gap-1 text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">
+          Read more <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  {{ else }}
+  <p class="text-gray-400 italic">No blog posts with this tag yet.</p>
+  {{ end }}
+
+</div>
+{{ end }}
