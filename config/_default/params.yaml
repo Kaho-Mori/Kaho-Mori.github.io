@@ -82,7 +82,7 @@ hugoblox:
     radius: "md"
     # Spacing density: 'compact', 'comfortable', or 'spacious'
     # 【余白】セクション間の空白の広さ
-    spacing: "spacious"
+    spacing: "comfortable"
     # Avatar shape in author profiles
     # 【アバター形状】プロフィール写真の形
     avatar_shape: circle # circle | square | rounded
