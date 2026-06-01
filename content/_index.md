@@ -39,7 +39,7 @@ sections:
       filters:
         folders:
           - publications
-      count: 3
+      count: 5
     design:
       view: citation
       columns: '1'
@@ -50,9 +50,9 @@ sections:
       filters:
         folders:
           - presentations
-      count: 3
+      count: 5
     design:
-      view: card
+      view: compact
       columns: '1'
   - block: collection
     id: news
@@ -61,8 +61,8 @@ sections:
       filters:
         folders:
           - blog
-      count: 3
+      count: 5
     design:
-      view: card
+      view: compact
       columns: '1'
 ---
