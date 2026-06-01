@@ -9,6 +9,7 @@ address:
 summary: ''
 abstract: '招待講演 (Invited talk)'
 event_type: 'talk'
+invited: true
 date: '2025-05-25T00:00:00Z'
 date_end: '2025-05-30T00:00:00Z'
 all_day: true

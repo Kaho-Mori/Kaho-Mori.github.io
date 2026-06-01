@@ -43,16 +43,12 @@ sections:
     design:
       view: citation
       columns: '1'
-  - block: collection
+  - block: markdown
     id: talks
     content:
-      title: Recent Presentations
-      filters:
-        folders:
-          - presentations
-      count: 5
+      title: 'Upcoming Presentations'
+      text: '{{< presentations-table section="upcoming" >}}'
     design:
-      view: date-title-summary
       columns: '1'
   - block: collection
     id: news

@@ -3,14 +3,10 @@ title: Presentations
 type: landing
 
 sections:
-  - block: collection
+  - block: markdown
     content:
       title: Presentations
-      filters:
-        folders:
-          - presentations
-      count: 500
+      text: '{{< presentations-table >}}'
     design:
-      view: date-title-summary
       columns: '1'
 ---
