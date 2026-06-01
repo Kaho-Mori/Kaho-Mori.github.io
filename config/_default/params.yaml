@@ -39,7 +39,7 @@ hugoblox:
     mode: system
     # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
     # 【テーマパック】data/themes/ 内のYAMLファイル名を指定（カスタムカラー定義）
-    pack: "default"
+    pack: "cupcake"
     # Optional: Override theme pack colors
     # 【アクセントカラー上書き】Tailwindカラー名("indigo","sky"等)かHEX("#6366f1")で指定
     colors:
