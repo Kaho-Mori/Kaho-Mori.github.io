@@ -29,7 +29,7 @@ abstract: |
 summary: ''
 
 links:
-  - name: Press Release (APRI)
+  - name: Press Release (AORI)
     url: https://www.aori.u-tokyo.ac.jp/research/news/2025/20251128.html
     icon: newspaper
   #- name: Press Release (UTokyo)
