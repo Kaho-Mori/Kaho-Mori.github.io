@@ -1,0 +1,16 @@
+{{/* Override of HugoBlox markdown block — max-w-prose removed from container and prose */}}
+{{ $wcPage  := .wcPage }}
+{{ $wcBlock := .wcBlock }}
+
+{{ $title := $wcBlock.content.title | default "" | emojify }}
+{{ $text  := $wcBlock.content.text  | default "" }}
+{{ $text   = $wcPage.RenderString $text | emojify }}
+
+<div class="flex flex-col items-start w-full gap-3 px-6">
+  {{ with $title }}
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white text-center w-full">{{ . }}</div>
+  {{ end }}
+  {{ with $text }}
+  <div class="prose prose-slate lg:prose-xl dark:prose-invert w-full max-w-none">{{ . | safeHTML }}</div>
+  {{ end }}
+</div>
