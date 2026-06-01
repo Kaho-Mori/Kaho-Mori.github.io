@@ -21,6 +21,10 @@ Source code for **[Kaho-Mori.github.io](https://Kaho-Mori.github.io)**, the pers
 
 **New blog post** — create a new folder under `content/blog/` with an `index.md`.
 
+- date: 論文の発表日（出版日）。一覧での並び順やページ上の表示日付に使われる。
+
+- publishDate: サイト上でこのページを公開する日。この日付より前だと、Hugoがビルドしてもページが生成されない（予約公開機能）。
+
 ## Profile Data — どこを編集すればどこに反映されるか
 
 プロフィールデータは **`data/authors/me.yaml` を編集する**のが基本。
