@@ -52,6 +52,6 @@ sections:
           - blog
       count: 3
     design:
-      view: article-grid
-      columns: '2'
+      view: card
+      columns: '1'
 ---
