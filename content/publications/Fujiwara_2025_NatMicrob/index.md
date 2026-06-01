@@ -2,8 +2,8 @@
 title: 'Carotenoids bind rhodopsins and act as photocycle-accelerating pigments in marine Bacteroidota'
 
 authors:
-  - Takayoshi Fujiwara†
-  - Toshiaki Hosaka†
+  - Takayoshi Fujiwara*
+  - Toshiaki Hosaka*
   - Masumi Hasegawa-Takano
   - Yosuke Nishimura
   - Kento Tominaga
@@ -14,9 +14,9 @@ authors:
   - Kazuharu Hanada
   - Takashi Maoka
   - Shinichi Takaichi
-  - Keiichi Inoue*
-  - Mikako Shirouzu*
-  - Susumu Yoshizawa*
+  - Keiichi Inoue†
+  - Mikako Shirouzu†
+  - Susumu Yoshizawa†
 
 date: '2025-09-04T00:00:00Z'
 publishDate: '2025-09-05T00:00:00Z'
@@ -31,6 +31,14 @@ abstract: |
 
 summary: ''
 
+links:
+  - name: Press Release (AORI)
+    url: https://www.aori.u-tokyo.ac.jp/research/news/2025/20250904.html
+    icon: newspaper
+  - name: Press Release (WPI-AIMEC)
+    url: https://wpi-aimec.jp/achievements/highlights_08.html
+    icon: newspaper
+   
 tags:
   - Marine Biogeochemistry
   - Microbial community
