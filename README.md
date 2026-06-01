@@ -31,7 +31,7 @@ Directory naming convention: `20xx_学会略称+回数_場所`
 | 変更したい内容 | 編集するファイル | 反映される場所 |
 | :--- | :--- | :--- |
 | 名前・役職・所属 | `data/authors/me.yaml` → `name` / `role` / `affiliations` | Bio（トップ）|
-| プロフィール文 | `data/authors/me.yaml` → `bio` **かつ** `content/_index.md` → `text`（冒頭部分）| Bio（トップ）|
+| プロフィール文 | `data/authors/me.yaml` → `bio` | Bio（トップ）|
 | アイコン写真 | `assets/media/authors/me.jpg` を差し替え | Bio（トップ）|
 | ソーシャルリンク | `data/authors/me.yaml` → `links` | Bio（トップ）|
 | 研究興味 | `data/authors/me.yaml` → `interests` | Bio（トップ）|
