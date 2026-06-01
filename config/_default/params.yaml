@@ -21,22 +21,27 @@ hugoblox:
     # Short tagline displayed on your site
     tagline: ""
     # Site meta description for search engines and social sharing
+    # 【SEO】Google検索結果などに表示されるサイトの説明文
     description: "The highly-customizable Hugo Academic theme powered by HugoBlox
       Kit. Easily create your personal academic website."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
-      twitter: "GoOwnable" # Twitter/X handle for Twitter Cards (without @)
+      twitter: "GoOwnable" # 【SNS】Twitter/X ハンドル（@なし）。OGPタグに使われる
 
   # ────────────────────────────────────────────────────────────────────────────
   # THEME
   # Color and visual design system
+  # 【見た目】テーマカラー・ダークモードの設定
   # ────────────────────────────────────────────────────────────────────────────
   theme:
     # Mode: 'light', 'dark', or 'system' (follows OS preference)
+    # 【ダーク/ライトモード】system=OS設定に追従, light=常に白, dark=常に黒
     mode: system
     # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
+    # 【テーマパック】data/themes/ 内のYAMLファイル名を指定（カスタムカラー定義）
     pack: "default"
     # Optional: Override theme pack colors
+    # 【アクセントカラー上書き】Tailwindカラー名("indigo","sky"等)かHEX("#6366f1")で指定
     colors:
       primary: "" # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
       secondary: ""
@@ -58,39 +63,50 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   # TYPOGRAPHY
   # Font and text sizing
+  # 【見た目】フォントの設定
   # ────────────────────────────────────────────────────────────────────────────
   typography:
     # Theme pack: name from data/fonts/
+    # 【フォント】data/fonts/ 内のYAMLファイル名を指定
+    # HugoBlox組み込み: "academic" / "minimal" / "native" など
     pack: "academic"
 
   # ────────────────────────────────────────────────────────────────────────────
   # LAYOUT
   # Spacing and shape tokens
+  # 【見た目】余白・角丸・アバター形状の設定
   # ────────────────────────────────────────────────────────────────────────────
   layout:
     # Border radius: 'none', 'sm', 'md', 'lg', or 'full'
+    # 【角丸】ボタン・カード・バッジなどの角の丸み。full=完全な円形
     radius: "md"
     # Spacing density: 'compact', 'comfortable', or 'spacious'
+    # 【余白】セクション間の空白の広さ
     spacing: "spacious"
     # Avatar shape in author profiles
+    # 【アバター形状】プロフィール写真の形
     avatar_shape: circle # circle | square | rounded
 
   # ────────────────────────────────────────────────────────────────────────────
   # HEADER
   # Site header and navigation bar
+  # 【見た目】ナビゲーションバーの設定
   # ────────────────────────────────────────────────────────────────────────────
   header:
     enable: true
     # Header style variant
+    # 【ナビバーのデザイン】navbar=標準, navbar-simple=シンプル, minimal=最小限
     style: navbar # navbar | navbar-simple | minimal
     # Stick to top on scroll
+    # 【固定表示】trueにするとスクロールしてもナビバーが上に固定される
     sticky: true
     # Menu alignment
+    # 【メニューの位置】center=中央揃え, left=左, right=右
     align: center # left | center | right
     # Feature toggles
-    search: true
-    theme_toggle: true
-    theme_picker: false
+    search: true          # 検索ボタンの表示
+    theme_toggle: true    # ダーク/ライト切替ボタンの表示
+    theme_picker: false   # テーマカラー選択パネルの表示（通常はfalseでよい）
     language_switcher: true
     # Call-to-action button
     cta:
