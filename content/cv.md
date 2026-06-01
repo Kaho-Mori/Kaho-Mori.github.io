@@ -31,7 +31,11 @@ sections:
     design:
       columns: '1'
 
-  - block: sampling-table
+  - block: markdown
     content:
-      title: Sampling
+      title: 'Sampling'
+      text: |-
+        *(Coming soon)*
+    design:
+      columns: '1'
 ---
