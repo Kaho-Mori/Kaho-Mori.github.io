@@ -28,6 +28,8 @@
 <h2 class="lg:text-6xl font-bold text-center mb-8">{{ . }}</h2>
 {{ end }}
 
+<div class="px-4 sm:px-6 lg:px-8">
+
 {{ define "pt-rows" }}
   {{ range . }}
     {{ $presenter := "" }}
@@ -105,3 +107,5 @@
   {{ template "pt-table" $past }}
 </div>
 {{ end }}
+
+</div>{{/* end px wrapper */}}
