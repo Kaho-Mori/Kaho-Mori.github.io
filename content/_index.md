@@ -11,10 +11,10 @@ sections:
       text: |
         <div class="flex flex-wrap gap-3 mt-6">
           <a href="/uploads/cv_en.pdf" class="inline-flex items-center gap-2 rounded-lg bg-primary-600 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-primary-500 transition">
-            📄 CV (English)
+            📄 Download CV (en)
           </a>
           <a href="/uploads/cv_ja.pdf" class="inline-flex items-center gap-2 rounded-lg border border-primary-600 px-5 py-2.5 text-sm font-semibold text-primary-600 hover:bg-primary-50 transition">
-            📄 CV（日本語）
+            📄 Download CV (ja)
           </a>
         </div>
       headings:
