@@ -10,6 +10,6 @@ sections:
         folders:
           - presentations
     design:
-      view: 2
+      view: date-title-summary
       columns: '1'
 ---

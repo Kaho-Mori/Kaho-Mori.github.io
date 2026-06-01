@@ -52,7 +52,7 @@ sections:
           - presentations
       count: 5
     design:
-      view: 2
+      view: date-title-summary
       columns: '1'
   - block: collection
     id: news
