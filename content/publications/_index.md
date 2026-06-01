@@ -16,7 +16,7 @@ sections:
       title: ''
       text: |
         <div class="text-center">
-        [Peer-Reviewed Articles](#papers) · [Preprints](#preprints) · [Other Publications](#other)
+        <a href="#papers">Peer-Reviewed Articles</a> · <a href="#preprints">Preprints</a> · <a href="#other">Other Publications</a>
         </div>
     design:
       columns: '1'
