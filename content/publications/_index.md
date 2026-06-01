@@ -15,7 +15,9 @@ sections:
     content:
       title: ''
       text: |
+        <div class="text-center">
         [Peer-Reviewed Articles](#papers) · [Preprints](#preprints) · [Other Publications](#other)
+        </div>
     design:
       columns: '1'
 
