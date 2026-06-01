@@ -1,0 +1,43 @@
+{{ $item := .item }}
+{{ $presenter := "" }}
+{{ with $item.Params.authors }}
+  {{ $first := index . 0 }}
+  {{ if ne $first "me" }}
+    {{ $presenter = $first }}
+  {{ end }}
+{{ end }}
+{{ $type := $item.Params.event_type | default "" }}
+
+<article class="relative flex flex-col gap-1 py-3 border-b border-gray-100 dark:border-gray-700">
+  {{/* Title */}}
+  <h3 class="text-base font-semibold leading-snug">
+    <a href="{{ $item.RelPermalink }}" class="hover:text-primary-600 dark:hover:text-primary-400">
+      {{ $item.Title }}
+    </a>
+  </h3>
+
+  {{/* Meta row: date / event type badge / event name */}}
+  <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-gray-500 dark:text-gray-400">
+    {{/* Date */}}
+    <span>{{ $item.Params.date | time.Format ":date_medium" }}</span>
+
+    {{/* Oral / Poster badge */}}
+    {{ if $type }}
+      <span class="rounded px-1.5 py-0.5 text-xs font-medium
+        {{ if eq $type "talk" }}bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200
+        {{ else }}bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-300{{ end }}">
+        {{ if eq $type "talk" }}Oral{{ else }}Poster{{ end }}
+      </span>
+    {{ end }}
+
+    {{/* Event name */}}
+    {{ with $item.Params.event }}
+      <span>{{ . }}</span>
+    {{ end }}
+
+    {{/* Non-me presenter */}}
+    {{ if $presenter }}
+      <span class="italic">Presenter: {{ $presenter }}</span>
+    {{ end }}
+  </div>
+</article>
