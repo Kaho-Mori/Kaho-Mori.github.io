@@ -10,6 +10,6 @@ sections:
         folders:
           - presentations
     design:
-      view: compact
+      view: 2
       columns: '1'
 ---
