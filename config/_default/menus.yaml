@@ -16,9 +16,6 @@ main:
   - name: Blog
     url: /blog/
     weight: 60
-  - name: Experience
-    url: /experience/
+  - name: CV
+    url: /cv/
     weight: 40
-  - name: Funding
-    url: /fund/
-    weight: 50
