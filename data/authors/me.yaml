@@ -34,11 +34,8 @@ affiliations:
 # アイコン名一覧: https://docs.hugoblox.com/reference/icons/
 # -----------------------------------------------------------------------
 links:
-  - icon: document-arrow-down
-    url: uploads/cv_ja.pdf   # ← 日本語CVのPDFファイル（static/uploads/cv_ja.pdf に配置）
-    label: 'CV（日本語）'
   - icon: at-symbol
-    url: mailto:your-email@example.com  # ← 自分のメールアドレスに変更
+    url: mailto:kaho-mori@aori.u-tokyo.ac.jp  # ← 自分のメールアドレスに変更
     label: Email
   - icon: brands/x
     url: https://twitter.com/kaho_mor_i
@@ -46,9 +43,9 @@ links:
   - icon: brands/github
     url: https://github.com/Kaho-Mori
     label: GitHub
-  # - icon: academicons/orcid
-  #   url: https://orcid.org/0000-0000-0000-0000
-  #   label: ORCID
+  - icon: academicons/orcid
+    url: https://orcid.org/0009-0004-2388-8548
+    label: ORCID
   # - icon: academicons/google-scholar
   #   url: https://scholar.google.com/citations?user=XXXXXXX
   #   label: Google Scholar
