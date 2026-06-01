@@ -3,9 +3,14 @@ title: Presentations
 type: landing
 
 sections:
-  - block: collection
+  - block: markdown
     content:
       title: Presentations
+      text: ''
+    design:
+      columns: '1'
+  - block: collection
+    content:
       filters:
         folders:
           - presentations
