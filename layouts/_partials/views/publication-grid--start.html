@@ -1,6 +1,5 @@
-{{/* Custom view for publications: shows journal name, hides reading time */}}
-{{- $item := .item -}}
-{{- $page := $item -}}
+{{/* Custom publication card — shows journal name, hides reading time */}}
+{{- $page := .item -}}
 
 {{- $has_image := false -}}
 {{- $img := "" -}}
@@ -45,9 +44,7 @@
           {{- if $i }}, {{ end -}}
           {{- if eq $author "me" -}}
             {{- with $site.Data.authors.me -}}<span class="font-semibold text-gray-700 dark:text-gray-300">{{ .name.display }}</span>{{- end -}}
-          {{- else -}}
-            {{ $author }}
-          {{- end -}}
+          {{- else -}}{{ $author }}{{- end -}}
         {{- end -}}
       {{- end -}}
     </div>
