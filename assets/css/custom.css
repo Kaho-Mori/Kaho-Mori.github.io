@@ -28,13 +28,9 @@
    markdown ブロックの幅制限解除
    外側コンテナと内側 prose 両方に max-w-prose が付いているため両方上書き。
    ------------------------------------------------------------ */
-.blox-markdown > div {
-  max-width: none;
-  width: 100%;
-}
-
-.blox-markdown .prose {
-  max-width: none;
+.blox-markdown div {
+  max-width: none !important;
+  width: 100% !important;
 }
 
 .article-metadata dl {
