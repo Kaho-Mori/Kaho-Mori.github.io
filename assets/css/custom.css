@@ -1,1 +1,17 @@
 /* custom styles */
+
+/* Publication page: Abstract を縦並び（見出し→本文）に変更 */
+.article-metadata dl {
+  display: block;
+}
+
+.article-metadata dt {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.article-metadata dd {
+  display: block;
+  margin-left: 0;
+  margin-bottom: 1.5rem;
+}
