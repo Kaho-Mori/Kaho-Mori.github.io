@@ -72,14 +72,11 @@ education:
 # 職歴
 # -----------------------------------------------------------------------
 work:
-  - position: Ph.D. Student / Research Assistant
-    company: Atmosphere and Ocean Research Institute, The University of Tokyo
-    company_url: https://www.aori.u-tokyo.ac.jp/english/
-    start: 2024-04-01
   - position: Research Student (研究生)
     company: Japan Agency for Marine-Earth Science and Technology (JAMSTEC)
     company_url: https://www.jamstec.go.jp/
     start: 2024-10-01
+    end: 2025-03-31
   - position: Project Researcher — JST SPRING Program
     company: Japan Science and Technology Agency (JST)
     company_url: https://www.jst.go.jp/jisedai/
@@ -88,6 +85,7 @@ work:
     company: JAMSTEC — Center for Bioscience Research and Education
     company_url: https://www.jamstec.go.jp/
     start: 2022-06-01
+    end: 2026-03-31
 
 # -----------------------------------------------------------------------
 # 受賞・資金（Funding ページにも表示）
