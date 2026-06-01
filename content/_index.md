@@ -13,7 +13,7 @@ sections:
           <a href="/uploads/cv_en.pdf" class="inline-flex items-center gap-2 rounded-lg bg-primary-600 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-primary-500 transition">
             📄 Download CV (en)
           </a>
-          <a href="/uploads/cv_ja.pdf" class="inline-flex items-center gap-2 rounded-lg border border-primary-600 px-5 py-2.5 text-sm font-semibold text-primary-600 hover:bg-primary-50 transition">
+          <a href="/uploads/cv_ja.pdf" class="inline-flex items-center gap-2 rounded-lg bg-primary-600 px-5 py-2.5 text-sm font-semibold text-primary-600 hover:bg-primary-50 transition">
             📄 Download CV (ja)
           </a>
         </div>
@@ -26,7 +26,7 @@ sections:
         gradient_mesh:
           enable: true
       name:
-        size: md
+        size: large
       avatar:
         size: large
         shape: circle
