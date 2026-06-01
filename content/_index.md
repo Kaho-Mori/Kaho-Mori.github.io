@@ -9,6 +9,9 @@ sections:
     content:
       username: me
       text: ''
+      button:
+        text: 'CV (English)'
+        url: uploads/cv_en.pdf
       headings:
         about: ''
         education: ''
@@ -20,7 +23,7 @@ sections:
       name:
         size: md
       avatar:
-        size: medium
+        size: large
         shape: circle
   - block: markdown
     content:

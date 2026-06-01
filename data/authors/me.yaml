@@ -30,6 +30,9 @@ affiliations:
 # アイコン名一覧: https://docs.hugoblox.com/reference/icons/
 # -----------------------------------------------------------------------
 links:
+  - icon: document-arrow-down
+    url: uploads/cv_ja.pdf   # ← 日本語CVのPDFファイル（static/uploads/cv_ja.pdf に配置）
+    label: 'CV（日本語）'
   - icon: at-symbol
     url: mailto:your-email@example.com  # ← 自分のメールアドレスに変更
     label: Email
