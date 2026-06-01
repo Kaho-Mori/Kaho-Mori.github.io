@@ -9,7 +9,7 @@ sections:
       filters:
         folders:
           - presentations
-      count: 0
+      count: 500
     design:
       view: date-title-summary
       columns: '1'
