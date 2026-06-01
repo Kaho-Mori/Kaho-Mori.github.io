@@ -12,7 +12,7 @@ sections:
           - publications
         publication_type: article-journal
     design:
-      view: publication-grid
+      view: article-grid
       columns: '2'
 
   - block: collection
@@ -23,7 +23,7 @@ sections:
           - publications
         publication_type: preprint
     design:
-      view: publication-grid
+      view: article-grid
       columns: '1'
 
   - block: collection
@@ -34,6 +34,6 @@ sections:
           - publications
         publication_type: other
     design:
-      view: publication-grid
+      view: article-grid
       columns: '2'
 ---
