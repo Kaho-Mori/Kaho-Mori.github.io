@@ -69,7 +69,7 @@ hugoblox:
     # Theme pack: name from data/fonts/
     # 【フォント】data/fonts/ 内のYAMLファイル名を指定
     # HugoBlox組み込み: "academic" / "minimal" / "native" など
-    pack: "academic"
+    pack: "modern"
 
   # ────────────────────────────────────────────────────────────────────────────
   # LAYOUT
