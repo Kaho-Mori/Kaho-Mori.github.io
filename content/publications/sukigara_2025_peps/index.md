@@ -37,15 +37,14 @@ summary: ''
 
 tags:
   - Marine Biogeochemistry
-  - Physical Oceanography
-  - Nitrate Isotope
+  - Microbial community
   - North Pacific
 
 featured: false
 
 image:
   caption: 'Water mass classification at station KEO'
-  focal_point: 'Center'
+  focal_point: 'Smart'
   preview_only: false
 
 projects: []
