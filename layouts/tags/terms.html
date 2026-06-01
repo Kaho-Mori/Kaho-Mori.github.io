@@ -1,0 +1,56 @@
+{{ define "main" }}
+<div class="container mx-auto px-6 py-12 max-w-5xl">
+
+  <h1 class="text-4xl font-bold mb-10 text-gray-900 dark:text-white">Tags</h1>
+
+  {{ $blog_tags := dict }}
+  {{ $pub_tags := dict }}
+
+  {{ range $name, $pages := .Site.Taxonomies.tags }}
+    {{ $blog_count := 0 }}
+    {{ $pub_count := 0 }}
+    {{ range $pages }}
+      {{ if eq .Section "blog" }}
+        {{ $blog_count = add $blog_count 1 }}
+      {{ else if eq .Section "publications" }}
+        {{ $pub_count = add $pub_count 1 }}
+      {{ end }}
+    {{ end }}
+    {{ if gt $blog_count 0 }}
+      {{ $blog_tags = merge $blog_tags (dict $name $blog_count) }}
+    {{ end }}
+    {{ if gt $pub_count 0 }}
+      {{ $pub_tags = merge $pub_tags (dict $name $pub_count) }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $blog_tags }}
+  <section class="mb-10">
+    <h2 class="text-xl font-semibold mb-4 text-gray-700 dark:text-gray-300">Blog</h2>
+    <div class="flex flex-wrap gap-2">
+      {{ range $name, $count := $blog_tags }}
+      <a href="/tags/{{ $name | urlize }}/"
+         class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 hover:bg-primary-200 dark:hover:bg-primary-800 transition">
+        {{ $name }}<span class="text-xs opacity-60 ml-1">{{ $count }}</span>
+      </a>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ if $pub_tags }}
+  <section class="mb-10">
+    <h2 class="text-xl font-semibold mb-4 text-gray-700 dark:text-gray-300">Publications</h2>
+    <div class="flex flex-wrap gap-2">
+      {{ range $name, $count := $pub_tags }}
+      <a href="/tags/{{ $name | urlize }}/"
+         class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 hover:bg-primary-200 dark:hover:bg-primary-800 transition">
+        {{ $name }}<span class="text-xs opacity-60 ml-1">{{ $count }}</span>
+      </a>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+</div>
+{{ end }}

@@ -1,46 +1,77 @@
 {{ define "main" }}
 {{ $tag := .Data.Term }}
 {{ $blog_pages := where .Pages "Section" "blog" | default slice }}
+{{ $pub_pages := where .Pages "Section" "publications" | default slice }}
 
 <div class="container mx-auto px-6 py-12 max-w-5xl">
 
   <div class="mb-2 text-sm text-gray-500 dark:text-gray-400">
-    <a href="/blog/" class="hover:underline">Blog</a> › Tag
+    <a href="/tags/" class="hover:underline">Tags</a> › {{ $tag }}
   </div>
 
-  <h1 class="text-4xl font-bold mb-8 text-gray-900 dark:text-white">
+  <h1 class="text-4xl font-bold mb-10 text-gray-900 dark:text-white">
     # {{ $tag }}
-    <span class="text-lg font-normal text-gray-400 ml-2">{{ len $blog_pages }} post{{ if ne (len $blog_pages) 1 }}s{{ end }}</span>
   </h1>
 
   {{ if $blog_pages }}
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-    {{ range $blog_pages.ByDate.Reverse }}
-    <div class="group flex flex-col rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
-      {{ with .Resources.GetMatch "featured*" }}
-      <a href="{{ $.RelPermalink }}" tabindex="-1">
-        <div class="h-36 overflow-hidden">
-          <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+  <section class="mb-12">
+    <h2 class="text-xl font-semibold mb-4 text-gray-700 dark:text-gray-300">
+      Blog <span class="text-sm font-normal text-gray-400 ml-1">{{ len $blog_pages }} post{{ if ne (len $blog_pages) 1 }}s{{ end }}</span>
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      {{ range $blog_pages.ByDate.Reverse }}
+      <div class="group flex flex-col rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+        {{ with .Resources.GetMatch "featured*" }}
+        <a href="{{ $.RelPermalink }}" tabindex="-1">
+          <div class="h-36 overflow-hidden">
+            <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+        </a>
+        {{ end }}
+        <div class="p-5 flex flex-col gap-2 flex-1">
+          <h2 class="text-base font-semibold text-gray-900 dark:text-white line-clamp-2">
+            <a href="{{ .RelPermalink }}" class="hover:text-primary-600 dark:hover:text-primary-400">{{ .Title }}</a>
+          </h2>
+          <p class="text-xs text-gray-500 dark:text-gray-400">{{ .Date | time.Format "Jan 2, 2006" }}</p>
+          {{ with .Summary }}
+          <p class="text-sm text-gray-600 dark:text-gray-300 line-clamp-3">{{ . | plainify }}</p>
+          {{ end }}
+          <a href="{{ .RelPermalink }}" class="mt-auto inline-flex items-center gap-1 text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">
+            Read more <span aria-hidden="true">→</span>
+          </a>
         </div>
-      </a>
+      </div>
       {{ end }}
-      <div class="p-5 flex flex-col gap-2 flex-1">
-        <h2 class="text-base font-semibold text-gray-900 dark:text-white line-clamp-2">
+    </div>
+  </section>
+  {{ end }}
+
+  {{ if $pub_pages }}
+  <section class="mb-12">
+    <h2 class="text-xl font-semibold mb-4 text-gray-700 dark:text-gray-300">
+      Publications <span class="text-sm font-normal text-gray-400 ml-1">{{ len $pub_pages }} item{{ if ne (len $pub_pages) 1 }}s{{ end }}</span>
+    </h2>
+    <div class="flex flex-col gap-4">
+      {{ range $pub_pages.ByDate.Reverse }}
+      <div class="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm p-5">
+        <h2 class="text-base font-semibold text-gray-900 dark:text-white mb-1">
           <a href="{{ .RelPermalink }}" class="hover:text-primary-600 dark:hover:text-primary-400">{{ .Title }}</a>
         </h2>
-        <p class="text-xs text-gray-500 dark:text-gray-400">{{ .Date | time.Format "Jan 2, 2006" }}</p>
+        <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">{{ .Date | time.Format "Jan 2, 2006" }}</p>
         {{ with .Summary }}
         <p class="text-sm text-gray-600 dark:text-gray-300 line-clamp-3">{{ . | plainify }}</p>
         {{ end }}
-        <a href="{{ .RelPermalink }}" class="mt-auto inline-flex items-center gap-1 text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">
+        <a href="{{ .RelPermalink }}" class="mt-2 inline-flex items-center gap-1 text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">
           Read more <span aria-hidden="true">→</span>
         </a>
       </div>
+      {{ end }}
     </div>
-    {{ end }}
-  </div>
-  {{ else }}
-  <p class="text-gray-400 italic">No blog posts with this tag yet.</p>
+  </section>
+  {{ end }}
+
+  {{ if and (not $blog_pages) (not $pub_pages) }}
+  <p class="text-gray-400 italic">No content with this tag yet.</p>
   {{ end }}
 
 </div>

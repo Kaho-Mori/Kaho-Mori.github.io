@@ -16,6 +16,9 @@ main:
   - name: Blog
     url: /blog/
     weight: 60
+  - name: Tags
+    url: /tags/
+    weight: 70
   - name: CV
     url: /cv/
     weight: 40
