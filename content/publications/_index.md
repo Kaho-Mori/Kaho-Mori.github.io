@@ -34,6 +34,6 @@ sections:
           - publications
         publication_type: other
     design:
-      view: date-title-summary
+      view: article-grid
       columns: '2'
 ---
