@@ -2,7 +2,7 @@
 title: '人工海水水族館の新規水槽立ち上げ期における微生物メタゲノム解析'
 event: '第10回 水族館シンポジウム'
 event_url: ''
-location: '大気海洋研究所, 柏'
+location: '大気海洋研究所, 千葉'
 address:
   city: 'Kashiwa'
   country: 'Japan'
