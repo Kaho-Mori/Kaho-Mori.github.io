@@ -1,5 +1,14 @@
 /* custom styles */
 
+/* Landing page first section title: match list page h1 size (lg:text-6xl = 3.75rem) */
+@media (min-width: 1024px) {
+  .blox-collection:first-child h2,
+  .blox-markdown:first-child h2 {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
 /* Publication page: Abstract を縦並び（見出し→本文）に変更 */
 .article-metadata dl {
   display: block;
