@@ -13,6 +13,7 @@ date: '2024-09-23T00:00:00Z'
 date_end: '2024-09-24T00:00:00Z'
 all_day: true
 publishDate: '2024-09-23T00:00:00Z'
+presenter: ""
 authors:
   - me
   - Yosuke Nishimura

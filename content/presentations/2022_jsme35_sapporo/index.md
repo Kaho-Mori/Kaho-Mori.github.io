@@ -13,6 +13,7 @@ date: '2022-10-21T00:00:00Z'
 date_end: '2022-11-03T00:00:00Z'
 all_day: true
 publishDate: '2022-10-21T00:00:00Z'
+presenter: ""
 authors:
   - me
   - Yosuke Nishimura

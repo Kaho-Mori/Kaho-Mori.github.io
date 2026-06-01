@@ -14,6 +14,7 @@ date: '2025-12-15T00:00:00Z'
 date_end: '2025-12-16T00:00:00Z'
 all_day: true
 publishDate: '2025-12-15T00:00:00Z'
+presenter: ""
 authors:
   - me
   - Susumu Yoshizawa
