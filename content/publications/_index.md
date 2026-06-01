@@ -6,6 +6,13 @@ type: landing
 sections:
   - block: markdown
     content:
+      title: 'Publications'
+      text: ''
+    design:
+      columns: '1'
+
+  - block: markdown
+    content:
       title: ''
       text: |
         [Peer-Reviewed Articles](#papers) · [Preprints](#preprints) · [Other Publications](#other)
