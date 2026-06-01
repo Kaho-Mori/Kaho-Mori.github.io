@@ -2,20 +2,21 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 avatar: authors/me.jpg
+
 name:
-  display: Kaho MORI
+  display: 森 香穂 (Kaho MORI)
   given: Kaho
   family: Mori
   alternate: '森 香穂'
-  pronunciation: ''
-  pronouns: ''
-postnominals: []
+
 status:
   icon: "🌊"
+
 role: Ph.D. Student in Natural Environmental Studies
+
 bio: |
-  Ph.D. student at the Graduate School of Frontier Sciences, The University 
-  of Tokyo, and the Atmosphere and Ocean Research Institute. My research 
+  Ph.D. student at the Graduate School of Frontier Sciences, The University
+  of Tokyo, and the Atmosphere and Ocean Research Institute. My research
   focuses on marine microbiology and microbial ecology.
 
 affiliations:
@@ -24,20 +25,13 @@ affiliations:
   - name: Atmosphere and Ocean Research Institute
     url: https://www.aori.u-tokyo.ac.jp/english/
 
+# -----------------------------------------------------------------------
+# ソーシャルリンク
+# アイコン名一覧: https://docs.hugoblox.com/reference/icons/
+# -----------------------------------------------------------------------
 links:
-  # 使えるアイコン例（icon フィールドに指定）:
-  #   brands/x         → X (Twitter)
-  #   brands/github    → GitHub
-  #   brands/linkedin  → LinkedIn
-  #   brands/researchgate → ResearchGate
-  #   brands/google-scholar → Google Scholar  ※ heroicons にはないので下記参照
-  #   at-symbol        → メールアドレス (mailto:xxx@example.com)
-  #   academicons/orcid → ORCID  ※ academicons が有効な場合
-  #
-  # HugoBlox で使える全アイコン:
-  #   https://docs.hugoblox.com/reference/icons/
   - icon: at-symbol
-    url: mailto:your-email@example.com   # ← 自分のメールアドレスに変更
+    url: mailto:your-email@example.com  # ← 自分のメールアドレスに変更
     label: Email
   - icon: brands/x
     url: https://twitter.com/kaho_mor_i
@@ -45,24 +39,22 @@ links:
   - icon: brands/github
     url: https://github.com/Kaho-Mori
     label: GitHub
-  # ORCID を追加したい場合（アイコンが表示されない場合は academicons/orcid を試す）
-  # - icon: brands/orcid
+  # - icon: academicons/orcid
   #   url: https://orcid.org/0000-0000-0000-0000
   #   label: ORCID
-  # Google Scholar を追加したい場合
   # - icon: academicons/google-scholar
   #   url: https://scholar.google.com/citations?user=XXXXXXX
   #   label: Google Scholar
-  # 研究室HPなど外部リンク
-  # - icon: link
-  #   url: https://example.com
-  #   label: Lab Website
 
 interests:
   - Marine Microbiology
   - Microbial Ecology
   - Oceanography
+  - Biogeochemistry
 
+# -----------------------------------------------------------------------
+# 学歴
+# -----------------------------------------------------------------------
 education:
   - degree: Ph.D. in Natural Environmental Studies (in progress)
     institution: Graduate School of Frontier Sciences, The University of Tokyo
@@ -76,5 +68,30 @@ education:
     start: 2018-04-01
     end: 2022-03-31
 
-skills: []
+# -----------------------------------------------------------------------
+# 職歴
+# -----------------------------------------------------------------------
+work:
+  - position: Ph.D. Student / Research Assistant
+    company: Atmosphere and Ocean Research Institute, The University of Tokyo
+    company_url: https://www.aori.u-tokyo.ac.jp/english/
+    start: 2024-04-01
+  - position: Research Student (研究生)
+    company: Japan Agency for Marine-Earth Science and Technology (JAMSTEC)
+    company_url: https://www.jamstec.go.jp/
+    start: 2024-10-01
+  - position: Project Researcher — JST SPRING Program
+    company: Japan Science and Technology Agency (JST)
+    company_url: https://www.jst.go.jp/jisedai/
+    start: 2024-04-01
+  - position: Temporary Research Assistant (臨時研究補助員)
+    company: JAMSTEC — Center for Bioscience Research and Education
+    company_url: https://www.jamstec.go.jp/
+    start: 2022-06-01
+
+# -----------------------------------------------------------------------
+# 受賞・資金（Funding ページにも表示）
+# -----------------------------------------------------------------------
 awards: []
+
+skills: []

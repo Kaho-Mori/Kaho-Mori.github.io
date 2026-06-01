@@ -21,7 +21,22 @@ Source code for **[Kaho-Mori.github.io](https://Kaho-Mori.github.io)**, the pers
 
 **New blog post** — create a new folder under `content/blog/` with an `index.md`.
 
-**Profile / CV data** — edit `data/authors/me.yaml` (structured fields) and `content/authors/me/_index.md` (detailed CV).
+## Profile Data — どこを編集すればどこに反映されるか
+
+プロフィールデータは **`data/authors/me.yaml` を編集する**のが基本。
+
+| 変更したい内容 | 編集するファイル | 反映される場所 |
+| :--- | :--- | :--- |
+| 名前・役職・所属 | `data/authors/me.yaml` → `name` / `role` / `affiliations` | Bio（トップ）|
+| プロフィール文 | `data/authors/me.yaml` → `bio` | Bio（トップ）|
+| アイコン写真 | `assets/media/authors/me.jpg` を差し替え | Bio（トップ）|
+| ソーシャルリンク | `data/authors/me.yaml` → `links` | Bio（トップ）|
+| 研究興味 | `data/authors/me.yaml` → `interests` | Bio（トップ）|
+| 学歴 | `data/authors/me.yaml` → `education` | Bio（トップ）・Experience |
+| 職歴 | `data/authors/me.yaml` → `work` | Experience |
+| 受賞・資金 | `data/authors/me.yaml` → `awards` | Funding |
+
+> `content/authors/me/_index.md` は著者システムの内部設定のみ（編集不要）。
 
 ## Built With
 
