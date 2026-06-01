@@ -4,7 +4,7 @@ is_owner: true
 avatar: authors/me.jpg
 
 name:
-  display: 森 香穂 (Kaho MORI)
+  display: Kaho Mori
   given: Kaho
   family: Mori
   alternate: '森 香穂'
@@ -49,8 +49,6 @@ links:
 interests:
   - Marine Microbiology
   - Microbial Ecology
-  - Oceanography
-  - Biogeochemistry
 
 # -----------------------------------------------------------------------
 # 学歴
@@ -63,8 +61,8 @@ education:
     institution: Graduate School of Frontier Sciences, The University of Tokyo
     start: 2022-04-01
     end: 2024-03-31
-  - degree: B.S. in Biology
-    institution: Ochanomizu University
+  - degree: B.S. in Science
+    institution: Department of Biology, Faculty of Science, Ochanomizu University
     start: 2018-04-01
     end: 2022-03-31
 
