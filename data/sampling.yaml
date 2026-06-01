@@ -1,0 +1,11 @@
+# Sampling / Field work records
+# Each entry supports: date, name, area, description, blog, blog_label
+# All fields except `date` and `name` are optional.
+#
+# Examples:
+# - date: "2024-07"
+#   name: "MR24-06"
+#   area: "North Pacific"
+#   description: "Kuroshio extension region"
+#   blog: "/blog/mr24-06/"
+#   blog_label: "Field notes"

@@ -14,9 +14,13 @@ sections:
       date_format: 'January 2006'
       is_education_first: true
 
+  - block: resume-funding
+    content:
+      title: Funding
+
   - block: resume-awards
     content:
-      title: Awards & Funding
+      title: Awards
       username: me
 
   - block: markdown
@@ -27,11 +31,7 @@ sections:
     design:
       columns: '1'
 
-  - block: markdown
+  - block: sampling-table
     content:
-      title: 'Research Cruises'
-      text: |-
-        *(Coming soon)*
-    design:
-      columns: '1'
+      title: Sampling
 ---
