@@ -62,6 +62,27 @@ work:
       - Conducting shipboard observations in the western North Pacific
       - Analyzing microbial community composition using amplicon sequencing
       - Investigating links between physical oceanography and microbial ecology
+  - position: Research Student (研究生)
+    company_name: Japan Agency for Marine-Earth Science and Technology (JAMSTEC)
+    company_url: 'https://www.jamstec.go.jp/'
+    company_logo: ''
+    date_start: 2024-10-01
+    date_end: ''
+    summary: ''
+  - position: Project Researcher (プロジェクト生)
+    company_name: JST 次世代研究者挑戦的研究プログラム (SPRING)
+    company_url: 'https://www.jst.go.jp/jisedai/'
+    company_logo: ''
+    date_start: 2024-04-01
+    date_end: ''
+    summary: ''
+  - position: Temporary Research Assistant (臨時研究補助員)
+    company_name: JAMSTEC — Center for Bioscience Research and Education
+    company_url: 'https://www.jamstec.go.jp/'
+    company_logo: ''
+    date_start: 2022-06-01
+    date_end: ''
+    summary: ''
 
 # ===== スキル =====
 skills:
