@@ -1,18 +1,3 @@
-/* ------------------------------------------------------------
-   presentations-table: prose の幅制限を解除してフル幅で表示
-   HugoBlox の markdown ブロックは max-w-prose で制限されるため上書きする。
-   min-width を設定しておくと列が潰れにくくなる。
-   ------------------------------------------------------------ */
-.presentations-table {
-  max-width: 100% !important;
-  width: 100%;
-  overflow-x: auto;
-}
-
-.presentations-table table {
-  min-width: 640px;
-}
-
 /* ============================================================
    custom.css — サイト固有のスタイル上書き
    HugoBlox のデフォルトスタイルを変更したいときはここに書く。

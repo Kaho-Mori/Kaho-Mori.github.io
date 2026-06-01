@@ -1,0 +1,107 @@
+{{/*
+  presentations-table block
+  Usage in front matter:
+    - block: presentations-table
+      content:
+        section: all       # "all" (default) | "upcoming" | "past"
+        title: Presentations  # optional heading
+*/}}
+
+{{ $section := .wcBlock.content.section | default "all" }}
+{{ $title   := .wcBlock.content.title   | default "" }}
+{{ $pages   := where .wcPage.Site.RegularPages "Section" "presentations" }}
+{{ $now     := now }}
+
+{{ $upcoming := slice }}
+{{ $past     := slice }}
+{{ range $pages }}
+  {{ if ge .Date $now }}
+    {{ $upcoming = $upcoming | append . }}
+  {{ else }}
+    {{ $past = $past | append . }}
+  {{ end }}
+{{ end }}
+{{ $upcoming = sort $upcoming "Date" "asc" }}
+{{ $past     = sort $past     "Date" "desc" }}
+
+{{ with $title }}
+<h2 class="lg:text-6xl font-bold text-center mb-8">{{ . }}</h2>
+{{ end }}
+
+{{ define "pt-rows" }}
+  {{ range . }}
+    {{ $presenter := "" }}
+    {{ with .Params.authors }}
+      {{ $first := index . 0 }}
+      {{ if ne $first "me" }}{{ $presenter = $first }}{{ end }}
+    {{ end }}
+
+    {{ $type := "Poster" }}
+    {{ if eq .Params.event_type "talk" }}
+      {{ if .Params.invited }}{{ $type = "Invited talk" }}
+      {{ else }}{{ $type = "Oral presentation" }}{{ end }}
+    {{ end }}
+
+    {{ $loc := .Params.location }}
+    {{ if not $loc }}
+      {{ with .Params.address }}
+        {{ if .city }}{{ $loc = printf "%s, %s" .city .country }}{{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ $eventLabel := .Params.event }}
+    {{ with .Params.event_short }}{{ $eventLabel = . }}{{ end }}
+
+    <tr class="border-b border-gray-100 dark:border-gray-700">
+      <td class="py-3 pr-4 align-top text-gray-500 dark:text-gray-400 whitespace-nowrap text-sm">
+        {{ .Date | time.Format "Jan 2006" }}
+      </td>
+      <td class="py-3 pr-4 align-top text-gray-600 dark:text-gray-300 text-xs">
+        {{ $eventLabel }}
+      </td>
+      <td class="py-3 pr-4 align-top">
+        <a href="{{ .RelPermalink }}" class="font-semibold hover:underline text-sm">{{ .Title }}</a>
+        {{ if $presenter }}<br><span class="text-xs italic text-gray-500 dark:text-gray-400">{{ $presenter }}</span>{{ end }}
+      </td>
+      <td class="py-3 pr-4 align-top text-xs text-gray-500 dark:text-gray-400">{{ $loc }}</td>
+      <td class="py-3 align-top text-xs text-gray-500 dark:text-gray-400">{{ $type }}</td>
+    </tr>
+  {{ end }}
+{{ end }}
+
+{{ define "pt-table" }}
+  {{ if . }}
+  <div class="overflow-x-auto">
+  <table class="w-full text-sm border-collapse">
+    <thead>
+      <tr class="border-b-2 border-gray-300 dark:border-gray-600">
+        <th class="text-left py-2 pr-4 font-semibold w-24">Date</th>
+        <th class="text-left py-2 pr-4 font-semibold w-40">Event</th>
+        <th class="text-left py-2 pr-4 font-semibold">Title &amp; Details</th>
+        <th class="text-left py-2 pr-4 font-semibold w-36">Location</th>
+        <th class="text-left py-2 font-semibold w-28">Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ template "pt-rows" . }}
+    </tbody>
+  </table>
+  </div>
+  {{ else }}
+  <p class="text-gray-400 italic text-sm">—</p>
+  {{ end }}
+{{ end }}
+
+{{ if or (eq $section "all") (eq $section "upcoming") }}
+<div class="mb-10">
+  <h3 class="text-xl font-bold mb-4">🗓 Upcoming Presentations</h3>
+  {{ template "pt-table" $upcoming }}
+</div>
+{{ end }}
+
+{{ if or (eq $section "all") (eq $section "past") }}
+<div>
+  <h3 class="text-xl font-bold mb-4">📚 Past Presentations</h3>
+  {{ template "pt-table" $past }}
+</div>
+{{ end }}

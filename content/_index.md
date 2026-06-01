@@ -43,13 +43,11 @@ sections:
     design:
       view: citation
       columns: '1'
-  - block: markdown
+  - block: presentations-table
     id: talks
     content:
       title: 'Upcoming Presentations'
-      text: '{{< presentations-table section="upcoming" >}}'
-    design:
-      columns: '1'
+      section: upcoming
   - block: collection
     id: news
     content:

@@ -3,10 +3,8 @@ title: Presentations
 type: landing
 
 sections:
-  - block: markdown
+  - block: presentations-table
     content:
       title: Presentations
-      text: '{{< presentations-table >}}'
-    design:
-      columns: '1'
+      section: all
 ---
