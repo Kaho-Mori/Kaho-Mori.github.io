@@ -9,6 +9,14 @@ sections:
     content:
       username: me
       text: |
+        Ph.D. student at the Graduate School of Frontier Sciences, The University
+        of Tokyo, and the Atmosphere and Ocean Research Institute. My research
+        focuses on marine microbiology and microbial ecology — particularly how
+        microbial communities in the ocean respond to physical forcing and
+        contribute to biogeochemical cycles.
+
+        Feel free to [reach out](mailto:) for collaboration!
+
         <div class="flex flex-wrap gap-4 mt-6">
           <a href="/uploads/cv_en.pdf" class="inline-flex items-center gap-2 rounded-lg bg-primary-600 px-8 py-4 text-base font-semibold text-white shadow hover:bg-primary-500 transition">
             📄 Download CV (en)
