@@ -40,9 +40,9 @@ links:
     icon: newspaper
    
 tags:
-  - Marine Biogeochemistry
-  - Microbial community
-  - North Pacific
+  - Marine Microbiology
+  - Microbial rhodopsin
+  - Carotenoid pigment
 
 featured: false
 
