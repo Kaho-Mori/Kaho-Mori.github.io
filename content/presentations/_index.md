@@ -2,7 +2,7 @@
 title: Presentations
 cms_exclude: true
 
-view: card
+view: compact
 
 # Optional cover image (relative to `assets/media/` folder).
 image:
