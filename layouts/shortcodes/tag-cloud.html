@@ -1,7 +1,15 @@
-{{ $tags := .Page.Site.Taxonomies.tags }}
-{{ range $name, $pages := $tags }}
+{{ $blog_pages := where .Page.Site.RegularPages "Section" "blog" }}
+{{ $tag_counts := dict }}
+{{ range $blog_pages }}
+  {{ range .Params.tags }}
+    {{ $count := add (index $tag_counts .) 1 | default 1 }}
+    {{ $tag_counts = merge $tag_counts (dict . $count) }}
+  {{ end }}
+{{ end }}
+
+{{ range $name, $count := $tag_counts }}
 <a href="/tags/{{ $name | urlize }}/"
    class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 hover:bg-primary-200 dark:hover:bg-primary-800 transition mr-2 mb-2">
-  {{ $name }}<span class="text-xs opacity-60 ml-1">{{ len $pages }}</span>
+  {{ $name }}<span class="text-xs opacity-60 ml-1">{{ $count }}</span>
 </a>
 {{ end }}
