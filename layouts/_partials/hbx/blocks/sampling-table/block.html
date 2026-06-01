@@ -14,7 +14,7 @@
 {{ $title := .wcBlock.content.title | default "Sampling" }}
 {{ $data  := .wcPage.Site.Data.sampling }}
 
-<h2 class="text-2xl font-bold mb-6">{{ $title }}</h2>
+<div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">{{ $title | markdownify | emojify }}</div>
 
 <div class="overflow-x-auto">
 {{ if $data }}

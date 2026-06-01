@@ -1,42 +1,39 @@
 {{/*
   resume-funding block
-  Reads funding[] from data/authors/me.yaml and renders a styled list.
+  Reads funding[] from data/authors/me.yaml.
   Each entry supports: title, organization, organization_url, year, date_start, date_end, description
 */}}
 
 {{ $title := .wcBlock.content.title | default "Funding" }}
 {{ $me    := .wcPage.Site.Data.authors.me }}
 
-<h2 class="text-2xl font-bold mb-6">{{ $title }}</h2>
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
 
-{{ with $me.funding }}
-  {{ if . }}
-  <ul class="space-y-4">
-    {{ range . }}
-    <li class="flex gap-4">
-      <div class="text-sm text-gray-500 dark:text-gray-400 w-20 shrink-0 pt-0.5">
-        {{ with .year }}{{ . }}{{ end }}
-        {{ if and .date_start (not .year) }}
-          {{ .date_start | time.Format "2006" }}{{ with .date_end }}–{{ . | time.Format "2006" }}{{ end }}
-        {{ end }}
-      </div>
-      <div>
-        <div class="font-semibold text-sm">{{ .title }}</div>
-        {{ with .organization }}
-          <div class="text-sm text-gray-600 dark:text-gray-300">
-            {{ if .organization_url }}<a href="{{ .organization_url }}" class="hover:underline">{{ . }}</a>{{ else }}{{ . }}{{ end }}
-          </div>
-        {{ end }}
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">{{ $title | markdownify | emojify }}</div>
+
+  {{ with $me.funding }}
+    {{ if . }}
+    <div class="w-full flex flex-col gap-6">
+      {{ range . }}
+      <div class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">{{ .title | markdownify | emojify }}</div>
+        <span class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">
+          {{ with .organization }}{{ . }}{{ end }}{{ if and .organization .year }} · {{ end }}{{ with .year }}{{ . }}{{ end }}
+          {{ if and .date_start (not .year) }}
+            {{ .date_start | time.Format "2006" }}{{ with .date_end }}–{{ . | time.Format "2006" }}{{ end }}
+          {{ end }}
+        </span>
         {{ with .description }}
-          <div class="text-sm text-gray-500 dark:text-gray-400 mt-1">{{ . | markdownify }}</div>
+        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400 prose">{{ . | markdownify }}</p>
         {{ end }}
       </div>
-    </li>
+      {{ end }}
+    </div>
+    {{ else }}
+    <p class="text-gray-400 italic text-sm">—</p>
     {{ end }}
-  </ul>
   {{ else }}
   <p class="text-gray-400 italic text-sm">—</p>
   {{ end }}
-{{ else }}
-<p class="text-gray-400 italic text-sm">—</p>
-{{ end }}
+
+</div>
