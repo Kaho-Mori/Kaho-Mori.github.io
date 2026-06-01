@@ -1,3 +1,4 @@
+<div class="flex flex-wrap justify-center">
 {{ range $name, $pages := .Page.Site.Taxonomies.tags }}
   {{ $blog_count := 0 }}
   {{ range $pages }}
@@ -12,3 +13,4 @@
 </a>
   {{ end }}
 {{ end }}
+</div>
