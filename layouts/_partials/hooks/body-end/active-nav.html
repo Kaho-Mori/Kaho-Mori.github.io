@@ -1,0 +1,12 @@
+<script>
+(function() {
+  var path = window.location.pathname;
+  document.querySelectorAll('nav a').forEach(function(a) {
+    var href = a.getAttribute('href');
+    if (!href || href === '/') return;
+    if (path === href || path.startsWith(href)) {
+      a.classList.add('nav-active');
+    }
+  });
+})();
+</script>

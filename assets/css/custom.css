@@ -44,7 +44,8 @@
    ナビバー：現在のページのリンクを強調表示
    Hugo は現在のページの <a> に aria-current="page" を付与する。
    ------------------------------------------------------------ */
-nav a[aria-current="page"] {
+nav a[aria-current="page"],
+nav a.nav-active {
   font-weight: 700;
   color: var(--color-primary-600, #6366f1) !important;
 }
