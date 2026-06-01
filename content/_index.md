@@ -9,11 +9,11 @@ sections:
     content:
       username: me
       text: |
-        <div class="flex flex-wrap gap-3 mt-6">
-          <a href="/uploads/cv_en.pdf" class="inline-flex items-center gap-2 rounded-lg bg-primary-600 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-primary-500 transition">
+        <div class="flex flex-wrap gap-4 mt-6">
+          <a href="/uploads/cv_en.pdf" class="inline-flex items-center gap-2 rounded-lg bg-primary-600 px-8 py-4 text-base font-semibold text-white shadow hover:bg-primary-500 transition">
             📄 Download CV (en)
           </a>
-          <a href="/uploads/cv_ja.pdf" class="inline-flex items-center gap-2 rounded-lg bg-primary-600 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-primary-500 transition">
+          <a href="/uploads/cv_ja.pdf" class="inline-flex items-center gap-2 rounded-lg bg-primary-600 px-8 py-4 text-base font-semibold text-white shadow hover:bg-primary-500 transition">
             📄 Download CV (ja)
           </a>
         </div>
@@ -37,14 +37,13 @@ sections:
       filters:
         folders:
           - publications
-      count: 5
+      count: 3
     design:
       view: citation
       columns: '1'
   - block: presentations-table
     id: talks
     content:
-      title: 'Upcoming Presentations'
       section: upcoming
   - block: collection
     id: news
@@ -53,8 +52,8 @@ sections:
       filters:
         folders:
           - blog
-      count: 5
+      count: 3
     design:
-      view: compact
+      view: card
       columns: '1'
 ---
