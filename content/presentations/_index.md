@@ -1,11 +1,15 @@
 ---
 title: Presentations
-cms_exclude: true
+type: landing
 
-view: article-grid
-
-# Optional cover image (relative to `assets/media/` folder).
-image:
-  caption: ''
-  filename: ''
+sections:
+  - block: collection
+    content:
+      title: Presentations
+      filters:
+        folders:
+          - presentations
+    design:
+      view: compact
+      columns: '1'
 ---
