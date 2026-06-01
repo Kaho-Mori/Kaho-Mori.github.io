@@ -2,7 +2,7 @@
 title: Presentations
 cms_exclude: true
 
-view: list
+view: article-grid
 
 # Optional cover image (relative to `assets/media/` folder).
 image:
