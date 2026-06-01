@@ -24,8 +24,6 @@
 {{ $upcoming = sort $upcoming "Date" "asc" }}
 {{ $past     = sort $past     "Date" "desc" }}
 
-<div class="mx-auto max-w-screen-xl px-4 lg:px-8">
-
 {{ with $title }}
 <h2 class="lg:text-6xl font-bold text-center mb-8">{{ . }}</h2>
 {{ end }}
@@ -107,5 +105,3 @@
   {{ template "pt-table" $past }}
 </div>
 {{ end }}
-
-</div>{{/* end max-w-6xl wrapper */}}

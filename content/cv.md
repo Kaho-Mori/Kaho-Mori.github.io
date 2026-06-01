@@ -7,13 +7,6 @@ design:
   spacing: '5rem'
 
 sections:
-  - block: markdown
-    content:
-      title: 'CV'
-      text: ''
-    design:
-      columns: '1'
-
   - block: resume-experience
     content:
       username: me

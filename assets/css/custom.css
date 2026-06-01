@@ -6,16 +6,13 @@
    ============================================================ */
 
 /* ------------------------------------------------------------
-   ランディングページのセクション見出しサイズ調整
-   Presentations・CV ページは type:landing を使っているため、
-   自動生成される <h1> がなく、ブロックの <h2> がページタイトルになる。
-   リストページ（Publications・Blog）の <h1>（lg:text-6xl = 3.75rem）
-   に合わせてサイズを揃えている。
-   触り方: font-size の値を変えるとタイトルの大きさが変わる。
+   Presentations ページのタイトルサイズ調整
+   type:landing では <h1> が自動生成されないため、
+   collection ブロックの <h2> をリストページの <h1>（3.75rem）に合わせる。
+   CV ページは resume-experience が先頭なので対象外。
    ------------------------------------------------------------ */
 @media (min-width: 1024px) {
-  .blox-collection:first-child h2,
-  .blox-markdown:first-child h2 {
+  .blox-collection:first-child h2 {
     font-size: 3.75rem;
     line-height: 1;
   }
