@@ -1,13 +1,7 @@
 {{/*
   presentations-table block
-  Usage in front matter:
-    - block: presentations-table
-      content:
-        section: all       # "all" (default) | "upcoming" | "past"
-        title: Presentations  # optional heading
-
   Each presentation's index.md can include:
-    presenter: "Kaho Mori"   # explicitly set the presenter name
+    presenter: "Kaho Mori"
 */}}
 
 {{ $section := .wcBlock.content.section | default "all" }}
@@ -33,9 +27,10 @@
 
 <div class="px-12 sm:px-16 lg:px-24">
 
-{{/* ── macro: render one section ── */}}
-{{ define "pt-section" }}
-  {{ if . }}
+{{ if or (eq $section "all") (eq $section "upcoming") }}
+<div class="mb-10">
+  <h3 class="text-xl font-bold mb-4">🗓 Upcoming Presentations</h3>
+  {{ if $upcoming }}
   <div class="overflow-x-auto">
   <table class="w-full text-sm border-collapse">
     <thead>
@@ -48,21 +43,17 @@
       </tr>
     </thead>
     <tbody>
-      {{ range . }}
+      {{ range $upcoming }}
         {{ $presenter := .Params.presenter | default "" }}
-
         {{ $type := "Poster" }}
         {{ if eq .Params.event_type "talk" }}
           {{ if .Params.invited }}{{ $type = "Invited talk" }}
           {{ else }}{{ $type = "Oral presentation" }}{{ end }}
         {{ end }}
-
         {{ $loc := .Params.location }}
         {{ if not $loc }}{{ with .Params.address }}{{ if .city }}{{ $loc = printf "%s, %s" .city .country }}{{ end }}{{ end }}{{ end }}
-
         {{ $eventLabel := .Params.event }}
         {{ with .Params.event_short }}{{ $eventLabel = . }}{{ end }}
-
         <tr class="border-b border-gray-100 dark:border-gray-700">
           <td class="py-3 pr-4 align-top text-gray-500 dark:text-gray-400 whitespace-nowrap text-sm">{{ .Date | time.Format "Jan 2006" }}</td>
           <td class="py-3 pr-4 align-top text-gray-600 dark:text-gray-300 text-xs">{{ $eventLabel }}</td>
@@ -80,20 +71,54 @@
   {{ else }}
   <p class="text-gray-400 italic text-sm">—</p>
   {{ end }}
-{{ end }}
-
-{{ if or (eq $section "all") (eq $section "upcoming") }}
-<div class="mb-10">
-  <h3 class="text-xl font-bold mb-4">🗓 Upcoming Presentations</h3>
-  {{ template "pt-section" $upcoming }}
 </div>
 {{ end }}
 
 {{ if or (eq $section "all") (eq $section "past") }}
 <div>
   <h3 class="text-xl font-bold mb-4">📚 Past Presentations</h3>
-  {{ template "pt-section" $past }}
+  {{ if $past }}
+  <div class="overflow-x-auto">
+  <table class="w-full text-sm border-collapse">
+    <thead>
+      <tr class="border-b-2 border-gray-300 dark:border-gray-600">
+        <th class="text-left py-2 pr-4 font-semibold w-24">Date</th>
+        <th class="text-left py-2 pr-4 font-semibold w-40">Event</th>
+        <th class="text-left py-2 pr-4 font-semibold">Title &amp; Presenter</th>
+        <th class="text-left py-2 pr-4 font-semibold w-36">Location</th>
+        <th class="text-left py-2 font-semibold w-28">Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $past }}
+        {{ $presenter := .Params.presenter | default "" }}
+        {{ $type := "Poster" }}
+        {{ if eq .Params.event_type "talk" }}
+          {{ if .Params.invited }}{{ $type = "Invited talk" }}
+          {{ else }}{{ $type = "Oral presentation" }}{{ end }}
+        {{ end }}
+        {{ $loc := .Params.location }}
+        {{ if not $loc }}{{ with .Params.address }}{{ if .city }}{{ $loc = printf "%s, %s" .city .country }}{{ end }}{{ end }}{{ end }}
+        {{ $eventLabel := .Params.event }}
+        {{ with .Params.event_short }}{{ $eventLabel = . }}{{ end }}
+        <tr class="border-b border-gray-100 dark:border-gray-700">
+          <td class="py-3 pr-4 align-top text-gray-500 dark:text-gray-400 whitespace-nowrap text-sm">{{ .Date | time.Format "Jan 2006" }}</td>
+          <td class="py-3 pr-4 align-top text-gray-600 dark:text-gray-300 text-xs">{{ $eventLabel }}</td>
+          <td class="py-3 pr-4 align-top">
+            <a href="{{ .RelPermalink }}" class="font-semibold hover:underline text-sm">{{ .Title }}</a>
+            {{ if $presenter }}<br><span class="text-xs italic text-gray-500 dark:text-gray-400">{{ $presenter }}</span>{{ end }}
+          </td>
+          <td class="py-3 pr-4 align-top text-xs text-gray-500 dark:text-gray-400">{{ $loc }}</td>
+          <td class="py-3 align-top text-xs text-gray-500 dark:text-gray-400">{{ $type }}</td>
+        </tr>
+      {{ end }}
+    </tbody>
+  </table>
+  </div>
+  {{ else }}
+  <p class="text-gray-400 italic text-sm">—</p>
+  {{ end }}
 </div>
 {{ end }}
 
-</div>{{/* end px wrapper */}}
+</div>
