@@ -14,14 +14,24 @@ sections:
       date_format: 'January 2006'
       is_education_first: true
 
-  - block: resume-funding
+  - block: markdown
     content:
-      title: Funding
+      title: 'Funding'
+      text: |-
+        - **2024–2027** JST次世代研究者挑戦的研究プログラム（SPRING） — 東京大学 SPRING GX プロジェクト生
+        - **2024** 東京大学 大学院新領域創成科学研究科 挑戦的新領域博士研究助成「タンパク質機能予測のための化合物スクリーニングパイプラインの開発」（研究分担者）
+        - **2025** 笹川科学研究助成「超高解像度メタトランスクリプトーム解析で解き明かす新しい海洋微生物生態像」（研究代表者）
+        - **2025–2026** Konno&レスター財団 農林水産業における革新的・先進的技術に関する研究（若手部門）「メタゲノムデータを用いた人工海水中の微生物群集動体解析」（研究代表者）
+    design:
+      columns: '1'
 
-  - block: resume-awards
+  - block: markdown
     content:
-      title: Awards
-      username: me
+      title: 'Awards'
+      text: |-
+        - 日本微生物生態学会 第35回大会 優秀ポスター賞
+    design:
+      columns: '1'
 
   - block: markdown
     content:
