@@ -15,7 +15,7 @@ sections:
   - block: collection
     id: papers
     content:
-      title: Publications
+      title: Peer-Reviewed Articles
       filters:
         folders:
           - publications
