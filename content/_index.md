@@ -43,10 +43,6 @@ sections:
     design:
       view: citation
       columns: '1'
-  - block: presentations-table
-    id: talks
-    content:
-      section: upcoming
   - block: collection
     id: news
     content:
