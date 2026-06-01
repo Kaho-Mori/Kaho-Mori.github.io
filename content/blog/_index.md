@@ -13,7 +13,7 @@ sections:
 
   - block: collection
     content:
-      title: ''
+      title: Blog
       filters:
         folders:
           - blog
