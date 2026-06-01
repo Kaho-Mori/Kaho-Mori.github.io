@@ -37,19 +37,9 @@
       <a href="{{ $page.RelPermalink }}" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">{{ $page.Title }}</a>
     </h3>
 
-    {{/* Authors */}}
-    {{- with $page.Params.authors -}}
-    <p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-2">
-      {{- $site := $page.Site -}}
-      {{- range $i, $author := . -}}
-        {{- if $i }}, {{ end -}}
-        {{- if eq $author "me" -}}
-          {{- with $site.Data.authors.me -}}<span class="font-semibold text-gray-700 dark:text-gray-300">{{ .name.display }}</span>{{- end -}}
-        {{- else -}}
-          {{ $author }}
-        {{- end -}}
-      {{- end -}}
-    </p>
+    {{/* Abstract summary */}}
+    {{- with $page.Summary -}}
+    <p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-3">{{ . | plainify }}</p>
     {{- end -}}
 
     {{/* Journal + Date */}}
