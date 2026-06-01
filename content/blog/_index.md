@@ -5,6 +5,13 @@ type: landing
 sections:
   - block: markdown
     content:
+      title: 'Blog'
+      text: ''
+    design:
+      columns: '1'
+
+  - block: markdown
+    content:
       title: ''
       text: |
         {{< tag-cloud >}}
@@ -13,7 +20,7 @@ sections:
 
   - block: collection
     content:
-      title: Blog
+      title: ''
       filters:
         folders:
           - blog
