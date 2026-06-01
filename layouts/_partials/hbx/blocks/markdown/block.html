@@ -6,7 +6,7 @@
 {{ $text  := $wcBlock.content.text  | default "" }}
 {{ $text   = $wcPage.RenderString $text | emojify }}
 
-<div class="flex flex-col items-start w-full gap-3 px-6">
+<div class="flex flex-col items-start w-full gap-3 px-8 sm:px-12 lg:px-24">
   {{ with $title }}
   <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white text-center w-full">{{ . }}</div>
   {{ end }}
