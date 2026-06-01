@@ -9,6 +9,7 @@ sections:
       filters:
         folders:
           - presentations
+      count: 0
     design:
       view: date-title-summary
       columns: '1'
