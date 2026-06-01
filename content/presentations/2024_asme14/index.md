@@ -4,7 +4,7 @@ event: 'The 14th Asian Symposium of Microbial Ecology (ASME14)'
 event_url: ''
 location: ''
 address:
-  city: ''
+  city: 'Taipei'
   country: ''
 summary: ''
 abstract: ''
