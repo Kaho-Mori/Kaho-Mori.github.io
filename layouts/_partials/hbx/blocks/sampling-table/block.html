@@ -2,12 +2,12 @@
   sampling-table block
   Reads data/sampling.yaml and renders a table.
 
-  Each entry in sampling.yaml supports (all optional except date and name):
-    date:         "2024-07"          # displayed as-is
-    name:         "MR24-06"          # cruise/field name
-    area:         "North Pacific"    # region/area
-    description:  "Short note"       # optional extra info
-    blog:         "/blog/mr24-06/"   # relative URL to a blog post
+  Each entry supports (all optional except date and name):
+    date:         "2024-07"
+    name:         "MR24-06"
+    area:         "North Pacific"
+    description:  "Short note"
+    blog:         "/blog/mr24-06/"
     blog_label:   "Field notes"      # link text (default: "Blog")
 */}}
 
@@ -16,9 +16,8 @@
 
 <h2 class="text-2xl font-bold mb-6">{{ $title }}</h2>
 
-<div class="px-4 sm:px-6 lg:px-8">
-{{ if $data }}
 <div class="overflow-x-auto">
+{{ if $data }}
 <table class="w-full text-sm border-collapse">
   <thead>
     <tr class="border-b-2 border-gray-300 dark:border-gray-600">
@@ -37,17 +36,16 @@
       <td class="py-3 pr-4 align-top text-gray-600 dark:text-gray-300">{{ .area }}</td>
       <td class="py-3 pr-4 align-top text-gray-500 dark:text-gray-400 text-xs">{{ with .description }}{{ . | markdownify }}{{ end }}</td>
       <td class="py-3 align-top">
-        {{ with .blog }}
-        <a href="{{ . }}" class="text-primary-600 hover:underline text-xs">
-          {{ $.blog_label | default "Blog" }}
-        </a>
+        {{ $blogURL := .blog }}
+        {{ $blogLabel := .blog_label | default "Blog" }}
+        {{ with $blogURL }}
+        <a href="{{ . }}" class="text-primary-600 hover:underline text-xs">{{ $blogLabel }}</a>
         {{ end }}
       </td>
     </tr>
     {{ end }}
   </tbody>
 </table>
-</div>
 {{ else }}
 <p class="text-gray-400 italic text-sm">—</p>
 {{ end }}

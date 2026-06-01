@@ -24,7 +24,7 @@
         <div class="font-semibold text-sm">{{ .title }}</div>
         {{ with .organization }}
           <div class="text-sm text-gray-600 dark:text-gray-300">
-            {{ if $.organization_url }}<a href="{{ $.organization_url }}" class="hover:underline">{{ . }}</a>{{ else }}{{ . }}{{ end }}
+            {{ if .organization_url }}<a href="{{ .organization_url }}" class="hover:underline">{{ . }}</a>{{ else }}{{ . }}{{ end }}
           </div>
         {{ end }}
         {{ with .description }}
