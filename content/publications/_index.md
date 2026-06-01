@@ -4,7 +4,16 @@ cms_exclude: true
 type: landing
 
 sections:
+  - block: markdown
+    content:
+      title: ''
+      text: |
+        [Peer-Reviewed Articles](#papers) · [Preprints](#preprints) · [Other Publications](#other)
+    design:
+      columns: '1'
+
   - block: collection
+    id: papers
     content:
       title: Publications
       filters:
@@ -16,6 +25,7 @@ sections:
       columns: '2'
 
   - block: collection
+    id: preprints
     content:
       title: Preprints
       filters:
@@ -27,6 +37,7 @@ sections:
       columns: '1'
 
   - block: collection
+    id: other
     content:
       title: Other Publications
       filters:
