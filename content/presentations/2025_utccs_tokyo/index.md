@@ -13,7 +13,7 @@ date: '2025-03-06T00:00:00Z'
 date_end: '2025-03-06T00:00:00Z'
 all_day: true
 publishDate: '2025-03-06T00:00:00Z'
-presenter: ""
+presenter: me
 authors:
   - me
   - Yu Nakajima
