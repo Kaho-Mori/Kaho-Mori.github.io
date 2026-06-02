@@ -120,7 +120,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   footer:
     # Footer style variant
-    style: columns # minimal | columns | centered
+    style: minimal # minimal | columns | centered
     language_switcher: true
     # Custom footer text (HTML supported)
     text: ""
