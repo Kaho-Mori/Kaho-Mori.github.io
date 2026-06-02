@@ -1,6 +1,6 @@
 ---
-title: 'Welcome to My Website'
-subtitle: 'A brief introduction to my research and this site'
+title: 'はじめまして — Self-Introduction'
+subtitle: '50の質問に絵文字で答えます'
 
 date: '2025-06-01T00:00:00Z'
 lastmod: '2025-06-01T00:00:00Z'
@@ -12,10 +12,10 @@ authors:
 
 tags:
   - Introduction
-  - Marine Microbiology
+  - Research Life
 
 categories:
-  - Research
+  - Blog
 
 image:
   caption: ''
@@ -23,16 +23,67 @@ image:
   preview_only: false
 ---
 
-Welcome to my personal academic website! I'm Kaho Mori, a Ph.D. student at the Graduate School of Frontier Sciences, The University of Tokyo, working at the Atmosphere and Ocean Research Institute (AORI).
+はじめまして、森 香穂（Kaho Mori）です。東京大学大気海洋研究所で海洋微生物生態学を研究しているPhD学生です。このサイトでは研究のことだけでなく、フィールドワークの記録や日常のことも発信していきたいと思っています。
 
-## What I Do
+自己紹介として、50の質問に**絵文字のみ**で答えてみました。言葉より正直かもしれません。
 
-My research focuses on **marine microbiology and microbial ecology** — specifically, how microbial communities in the ocean respond to environmental changes and contribute to biogeochemical cycles.
+---
 
-## What You'll Find Here
+## Q&A: 50 Questions
 
-- **Publications**: My peer-reviewed papers and preprints
-- **Talks**: Conference presentations and posters
-- **Blog**: Updates on fieldwork, research highlights, and academic life
+| # | Question | Answer |
+|---|----------|--------|
+| 1 | 朝型？夜型？ | 🦉 |
+| 2 | 海と山、どちらが好き？ | 🌊 |
+| 3 | 直感派？熟考派？ | 🤔💡 |
+| 4 | 今の自分を色に例えると？ | 🩵 |
+| 5 | 無人島に1冊だけ持っていくとしたら？ | 📖🌿 |
+| 6 | 「これだけは譲れない」仕事上のこだわりは？ | 🔬✨ |
+| 7 | 人生で一番長く続いていることは？ | 🐠 |
+| 8 | 理想の休日を一言で？ | 🛁📚 |
+| 9 | 自分の長所を他人はどう表現すると思う？ | 🐢💪 |
+| 10 | 逆に、自分の短所は？ | 🌀😅 |
+| 11 | 子どもの頃の夢は？ | 🐋🔭 |
+| 12 | 好きな天気は？ | 🌧️ |
+| 13 | 決断するとき、最後に頼るのは論理？感情？ | 💗 |
+| 14 | 「心地よい孤独」と「寂しさ」の違いは何だと思う？ | 🕯️ vs 🕳️ |
+| 15 | 自分を動物に例えると？ | 🦑 |
+| 16 | 最近感動したことは？ | 🌅🚢 |
+| 17 | コーヒー派？お茶派？ | 🍵 |
+| 18 | 旅行先で真っ先にすることは？ | 🗺️👀 |
+| 19 | 「好き」と「得意」、どちらを優先してきた？ | ❤️ |
+| 20 | 座右の銘、あるいはよく頭に浮かぶ言葉は？ | 🌊🔄 |
+| 21 | ストレス解消法は？ | 🛀🎵 |
+| 22 | 自分の中で一番「研究者っぽくない」と思う部分は？ | 🧸 |
+| 23 | 人に話すのが恥ずかしい好きなものは？ | 🪐✨ |
+| 24 | 10年後の自分に一言かけるとしたら？ | 🤝 |
+| 25 | 「美しい」と思う瞬間は？ | 🔬🌈 |
+| 26 | 繰り返し見返す・読み返すものがあれば？ | 📓🌊 |
+| 27 | 集中しているときのクセは？ | 🎧🖊️ |
+| 28 | 人生で最も影響を受けた「場所」は？ | 🌏🚢 |
+| 29 | 自分の人生のテーマを映画タイトルで表すなら？ | 🔍🌊❓ |
+| 30 | 好きな数字とその理由は？ | 🔢∞ |
+| 31 | 「天才」と「努力家」、自分はどちらだと思う？ | 🏃‍♀️💦 |
+| 32 | 人と話すとき、相手のどこを一番見る？ | 👀 |
+| 33 | 完璧主義者？それともほどほど主義者？ | ⚖️😬 |
+| 34 | 音楽を聴くとしたら、どんな場面で？ | 🚶‍♀️🎶 |
+| 35 | 自分が「本当に疲れているな」と気づくサインは？ | 🍜😶 |
+| 36 | 誰かに絶対に勧めたい体験は？ | 🚢🌟 |
+| 37 | 言語化が得意？苦手？ | ✍️🐌 |
+| 38 | 「正しさ」と「優しさ」が衝突したら、どちらを選ぶ？ | 🤲 |
+| 39 | 人生で一番「遠回りしたな」と思う経験は？ | 🌀➡️🎯 |
+| 40 | 自分にとって「贅沢」とは何？ | ⏳🤍 |
+| 41 | 同じ場所に留まる派？常に新しい場所へ行く派？ | 🌍➡️ |
+| 42 | 記憶力と想像力、どちらが強い？ | 🌈💭 |
+| 43 | 宇宙と深海、どちらが気になる？ | 🌊🕳️ |
+| 44 | 自分の「こだわり」が強すぎると感じる分野は？ | 📊🔁 |
+| 45 | 他人に期待する？しない？ | 🌱 |
+| 46 | 夢をよく見る？覚えている？ | 🌙💭✅ |
+| 47 | 人生で最も「運がよかった」と思う瞬間は？ | 🎲✨ |
+| 48 | 自分を構成する「3つのもの」を挙げるとしたら？ | 🌊🔬☕ |
+| 49 | 読者へ：このサイトに来てくれた人に一言。 | 🙏🌊✨ |
+| 50 | 最後に、今この瞬間の気分を一言で！ | 🫧 |
 
-Feel free to [reach out](/#contact) if you're interested in collaboration or have any questions!
+---
+
+*絵文字の意味が気になったら、ぜひ声をかけてください 😄*
