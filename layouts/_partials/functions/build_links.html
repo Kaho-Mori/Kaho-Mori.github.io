@@ -37,9 +37,43 @@
     {{- $links = $links | append (dict
       "type" "doi"
       "url" $url
-      "icon" "link"
+      "icon" "academicons/doi"
       "labelKey" "btn_doi"
       "label" ""
+      "contexts" (slice "page" "list")
+      "rel" ""
+    ) -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* Figshare link */}}
+{{- with $page.Params.url_figshare -}}
+  {{- $key := printf "figshare::%s" . -}}
+  {{- if not ($seen.Get $key) -}}
+    {{- $seen.Set $key true -}}
+    {{- $links = $links | append (dict
+      "type" "custom"
+      "url" .
+      "icon" "academicons/figshare"
+      "labelKey" ""
+      "label" "Figshare"
+      "contexts" (slice "page" "list")
+      "rel" ""
+    ) -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* BioProject link */}}
+{{- with $page.Params.url_bioproject -}}
+  {{- $key := printf "bioproject::%s" . -}}
+  {{- if not ($seen.Get $key) -}}
+    {{- $seen.Set $key true -}}
+    {{- $links = $links | append (dict
+      "type" "custom"
+      "url" .
+      "icon" "circle-stack"
+      "labelKey" ""
+      "label" "BioProject"
       "contexts" (slice "page" "list")
       "rel" ""
     ) -}}
@@ -72,7 +106,7 @@
     {{- $links = $links | append (dict
       "type" "cite"
       "url" $citeRes.RelPermalink
-      "icon" "academic-cap"
+      "icon" "plus-circle"
       "labelKey" "btn_cite"
       "label" ""
       "contexts" (slice "page" "list")

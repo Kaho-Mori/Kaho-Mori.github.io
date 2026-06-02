@@ -14,7 +14,7 @@
       {{ if gt $count 0 }}
       <a href="/tags/{{ $name | urlize }}/"
          class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 hover:bg-primary-200 dark:hover:bg-primary-800 transition">
-        {{ $name }}<span class="text-xs opacity-60 ml-1">{{ $count }}</span>
+        <span class="opacity-50">#</span>{{ $name }}<span class="text-xs opacity-60 ml-1">{{ $count }}</span>
       </a>
       {{ end }}
     {{ end }}
