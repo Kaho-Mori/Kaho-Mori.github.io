@@ -13,7 +13,7 @@ date: '2025-09-07T00:00:00Z'
 date_end: '2025-09-10T00:00:00Z'
 all_day: true
 publishDate: '2025-09-07T00:00:00Z'
-presenter: ""
+presenter: Kento Tominaga
 authors:
   - Kento Tominaga
   - me
