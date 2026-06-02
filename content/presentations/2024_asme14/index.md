@@ -13,7 +13,7 @@ date: '2024-09-21T00:00:00Z'
 date_end: '2024-09-21T00:00:00Z'
 all_day: true
 publishDate: '2024-09-21T00:00:00Z'
-presenter: ""
+presenter: Yanfei Zhang
 authors:
   - Yanfei Zhang
   - Youta Sugai
