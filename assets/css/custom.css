@@ -78,7 +78,8 @@
 }
 
 /* 各コンテンツページのタグに # を付与 */
-.article-tags a::before {
+.article-tags a::before,
+div.flex.justify-center a[href^="/tags/"]::before {
   content: '# ';
   opacity: 0.5;
 }

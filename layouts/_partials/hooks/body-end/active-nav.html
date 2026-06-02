@@ -10,11 +10,14 @@
     }
   });
 
-  // Move article tags above article-metadata
-  var tags = document.querySelector('.article-tags');
-  var meta = document.querySelector('.article-metadata');
-  if (tags && meta && meta.parentNode) {
-    meta.parentNode.insertBefore(tags, meta);
-  }
+  // Move tags div (containing /tags/ links) to just after h1
+  document.querySelectorAll('div.flex.justify-center').forEach(function(div) {
+    if (div.querySelector('a[href^="/tags/"]')) {
+      var h1 = document.querySelector('h1');
+      if (h1 && h1.parentNode) {
+        h1.parentNode.insertBefore(div, h1.nextSibling);
+      }
+    }
+  });
 })();
 </script>
