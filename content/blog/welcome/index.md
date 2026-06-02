@@ -27,6 +27,8 @@ image:
 
 自己紹介として、50の質問に**絵文字のみ**で答えてみました。言葉より正直かもしれません。
 
+🇬🇧 [English version here](/blog/welcome-en/)
+
 ---
 
 ## Q&A: 50 Questions
