@@ -10,7 +10,7 @@ name:
   alternate: '森 香穂'
 
 status:
-  icon: "🌊"
+  icon: "💤"
 
 role: Ph.D. Student in Natural Environmental Studies
 
@@ -20,13 +20,15 @@ bio: |
   focuses on marine microbiology and microbial ecology — particularly how
   microbial communities in the ocean respond to physical forcing and
   contribute to biogeochemical cycles.
-
-  Feel free to [reach out](mailto:) for collaboration!
+  # 変更
+  Feel free to [reach out](mailto:kaho-mori@aori.u-tokyo.ac.jp) for collaboration!
 
 affiliations:
-  - name: Graduate School of Frontier Sciences, The University of Tokyo
+  - icon: building-office-2
+    name: Graduate School of Frontier Sciences, The University of Tokyo
     url: https://www.k.u-tokyo.ac.jp/en/
-  - name: Atmosphere and Ocean Research Institute
+  - icon: building-office-2
+    name: Atmosphere and Ocean Research Institute
     url: https://www.aori.u-tokyo.ac.jp/english/
 
 # -----------------------------------------------------------------------
@@ -34,18 +36,27 @@ affiliations:
 # アイコン名一覧: https://docs.hugoblox.com/reference/icons/
 # -----------------------------------------------------------------------
 links:
-  - icon: at-symbol
+  - label: Email
     url: mailto:kaho-mori@aori.u-tokyo.ac.jp  # ← 自分のメールアドレスに変更
-    label: Email
-  - icon: brands/x
-    url: https://twitter.com/kaho_mor_i
-    label: X (Twitter)
-  - icon: brands/github
-    url: https://github.com/Kaho-Mori
-    label: GitHub
-  - icon: academicons/orcid
+    icon: envelope
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?user=XXXXXXX
+    icon: academicons/google-scholar
+  - label: ORCID
     url: https://orcid.org/0009-0004-2388-8548
-    label: ORCID
+    icon: academicons/orcid
+  - label: Researchmap
+    url: https://orcid.org/0009-0004-2388-8548
+    icon: beaker
+  - label: GitHub
+    url: https://github.com/Kaho-Mori
+    icon: brands/github
+  - label: X (Twitter)
+    url: https://twitter.com/kaho_mor_i
+    icon: brands/x
+  - label: bluesky
+    url: https://orcid.org/0009-0004-2388-8548
+    icon: brands/bluesky
   # - icon: academicons/google-scholar
   #   url: https://scholar.google.com/citations?user=XXXXXXX
   #   label: Google Scholar
@@ -53,6 +64,10 @@ links:
 interests:
   - Marine Microbiology
   - Microbial Ecology
+  - Aquarium
+  - small RNA
+  - Metagenomics
+  - Metatranscriptomics
 
 # -----------------------------------------------------------------------
 # 学歴
