@@ -1,5 +1,6 @@
 <script>
 (function() {
+  // Active nav highlight
   var path = window.location.pathname;
   document.querySelectorAll('nav a').forEach(function(a) {
     var href = a.getAttribute('href');
@@ -8,5 +9,12 @@
       a.classList.add('nav-active');
     }
   });
+
+  // Move article tags above article-metadata
+  var tags = document.querySelector('.article-tags');
+  var meta = document.querySelector('.article-metadata');
+  if (tags && meta && meta.parentNode) {
+    meta.parentNode.insertBefore(tags, meta);
+  }
 })();
 </script>
