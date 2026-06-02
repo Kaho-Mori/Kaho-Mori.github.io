@@ -51,6 +51,11 @@
   margin-bottom: 1.5rem;
 }
 
+/* 論文詳細ページの画像キャプションを非表示 */
+.article-container figcaption {
+  display: none;
+}
+
 /* ------------------------------------------------------------
    ナビバー：現在のページのリンクを強調表示
    Hugo は現在のページの <a> に aria-current="page" を付与する。
