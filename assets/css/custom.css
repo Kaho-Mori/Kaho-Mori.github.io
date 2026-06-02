@@ -56,6 +56,17 @@
   display: none;
 }
 
+/* コンテンツページのタグを rounded-full に統一 */
+div.flex.justify-center a[href^="/tags/"] {
+  border-radius: 9999px !important;
+}
+
+/* タグとページタイトルの間に余白を追加 */
+div.flex.justify-center:has(a[href^="/tags/"]) {
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
 /* タグをarticle-metadataの直後に移動 */
 .article-tags {
   order: -1;
