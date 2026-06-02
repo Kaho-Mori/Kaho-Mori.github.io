@@ -56,9 +56,14 @@
   display: none;
 }
 
-/* コンテンツページのタグを rounded-full に統一 */
+/* コンテンツページのタグを rounded-full・文字サイズ・色に統一 */
 div.flex.justify-center a[href^="/tags/"] {
   border-radius: 9999px !important;
+  font-size: 0.875rem !important; /* text-sm */
+  color: rgb(var(--color-primary-800, 107 33 168)) !important;
+}
+.dark div.flex.justify-center a[href^="/tags/"] {
+  color: rgb(var(--color-primary-300, 216 180 254)) !important;
 }
 
 /* タグとページタイトルの間に余白を追加 */
