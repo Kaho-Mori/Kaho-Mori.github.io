@@ -77,13 +77,6 @@
   order: 3;
 }
 
-/* 各コンテンツページのタグに # を付与 */
-.article-tags a::before,
-div.flex.justify-center a[href^="/tags/"]::before {
-  content: '# ';
-  opacity: 0.5;
-}
-
 /* ------------------------------------------------------------
    ナビバー：現在のページのリンクを強調表示
    Hugo は現在のページの <a> に aria-current="page" を付与する。
