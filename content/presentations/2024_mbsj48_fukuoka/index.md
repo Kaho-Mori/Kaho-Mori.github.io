@@ -13,7 +13,7 @@ date: '2024-11-27T00:00:00Z'
 date_end: '2024-11-29T00:00:00Z'
 all_day: true
 publishDate: '2024-11-27T00:00:00Z'
-presenter: ""
+presenter: Takayoshi Fujiwara
 authors:
   - Takayoshi Fujiwara
   - Masumi Hasegawa-Takano
