@@ -4,10 +4,11 @@
     presenter: "Kaho Mori"
 */}}
 
-{{ $section := .wcBlock.content.section | default "all" }}
-{{ $title   := .wcBlock.content.title   | default "" }}
-{{ $pages   := where .wcPage.Site.RegularPages "Section" "presentations" }}
-{{ $now     := now }}
+{{ $section  := .wcBlock.content.section | default "all" }}
+{{ $title    := .wcBlock.content.title   | default "" }}
+{{ $pages    := where .wcPage.Site.RegularPages "Section" "presentations" }}
+{{ $siteName := .wcPage.Site.Params.hugoblox.identity.name | default "Kaho Mori" }}
+{{ $now      := now }}
 
 {{ $upcoming := slice }}
 {{ $past     := slice }}
@@ -45,6 +46,7 @@
     <tbody>
       {{ range $upcoming }}
         {{ $presenter := .Params.presenter | default "" }}
+        {{ if eq $presenter "me" }}{{ $presenter = $siteName }}{{ end }}
         {{ $type := "Poster" }}
         {{ if eq .Params.event_type "talk" }}
           {{ if .Params.invited }}{{ $type = "Invited talk" }}
@@ -92,6 +94,7 @@
     <tbody>
       {{ range $past }}
         {{ $presenter := .Params.presenter | default "" }}
+        {{ if eq $presenter "me" }}{{ $presenter = $siteName }}{{ end }}
         {{ $type := "Poster" }}
         {{ if eq .Params.event_type "talk" }}
           {{ if .Params.invited }}{{ $type = "Invited talk" }}
