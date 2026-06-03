@@ -10,7 +10,7 @@ authors:
   - Susumu Yoshizawa
 
 date: '2026-07-01T00:00:00Z'
-publishDate: '2026-06-01T00:00:00Z'
+publishDate: '2026-07-01T00:00:00Z'
 
 publication_types: ['article-journal']
 
@@ -30,7 +30,7 @@ tags:
 
 links:
   - name: MAG metadata
-    url: https://www.aori.u-tokyo.ac.jp/research/news/2025/20251128.html
+    url: 
     icon: academicons/zenodo
 
 featured: false
