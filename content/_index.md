@@ -22,7 +22,7 @@ sections:
         size: large
       avatar:
         size: large
-        shape: circle
+        shape: square
   - block: collection
     id: papers
     content:
