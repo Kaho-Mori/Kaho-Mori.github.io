@@ -30,7 +30,7 @@ tags:
 
 links:
   - name: MAG metadata
-    url: 
+    url: https://www.aori.u-tokyo.ac.jp/research/news/2025/20251128.html
     icon: academicons/zenodo
 
 featured: false
