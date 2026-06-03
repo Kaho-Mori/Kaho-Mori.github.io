@@ -18,9 +18,17 @@ sections:
     design:
       columns: '1'
 
+  - block: markdown
+    content:
+      title: '📍 Pinned Post'
+      text: |
+        {{< pinned-posts >}}
+    design:
+      columns: '1'
+
   - block: collection
     content:
-      title: ''
+      title: 'Post List'
       filters:
         folders:
           - blog

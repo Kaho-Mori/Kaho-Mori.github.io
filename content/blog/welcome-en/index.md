@@ -5,6 +5,7 @@ subtitle: 'Answering 50 questions with only emojis'
 date: '2025-06-01T00:00:00Z'
 lastmod: '2025-06-01T00:00:00Z'
 weight: 1
+pinned: true
 
 draft: false
 

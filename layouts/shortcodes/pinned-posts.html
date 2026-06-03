@@ -1,0 +1,35 @@
+{{ $pinned := slice }}
+{{ range .Page.Site.RegularPages }}
+  {{ if and (eq .Section "blog") (.Params.pinned) }}
+    {{ $pinned = $pinned | append . }}
+  {{ end }}
+{{ end }}
+{{ $pinned = sort $pinned "Weight" "asc" }}
+
+{{ if $pinned }}
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
+  {{ range $pinned }}
+  <div class="group flex flex-col rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+    {{ with .Resources.GetMatch "featured*" }}
+    <a href="{{ $.RelPermalink }}" tabindex="-1">
+      <div class="h-36 overflow-hidden">
+        <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+      </div>
+    </a>
+    {{ end }}
+    <div class="p-5 flex flex-col gap-2 flex-1">
+      <h3 class="text-base font-semibold text-gray-900 dark:text-white line-clamp-2">
+        <a href="{{ .RelPermalink }}" class="hover:text-primary-600 dark:hover:text-primary-400 no-underline">{{ .Title }}</a>
+      </h3>
+      <p class="text-xs text-gray-500 dark:text-gray-400">{{ .Date | time.Format "Jan 2, 2006" }}</p>
+      {{ with .Summary }}
+      <p class="text-sm text-gray-600 dark:text-gray-300 line-clamp-3">{{ . | plainify }}</p>
+      {{ end }}
+      <a href="{{ .RelPermalink }}" class="mt-auto inline-flex items-center gap-1 text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">
+        Read more <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+  {{ end }}
+</div>
+{{ end }}
