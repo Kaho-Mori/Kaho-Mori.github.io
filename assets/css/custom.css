@@ -20,13 +20,14 @@
 
 /* ------------------------------------------------------------
    collection ブロックのタイトル色を黒（ダーク時は白）に統一
-   デフォルトはアクセントカラーになるため上書き
+   デフォルトはアクセントカラーになるため上書き。
+   rgb() はTailwindのgray-900/whiteと同値。テーマ変更時はここも変更する。
    ------------------------------------------------------------ */
-.blox-collection h2 {
-  color: rgb(17 24 39) !important; /* gray-900 */
+body .blox-collection h2 {
+  color: rgb(17 24 39); /* gray-900 */
 }
-.dark .blox-collection h2 {
-  color: rgb(255 255 255) !important;
+body.dark .blox-collection h2 {
+  color: rgb(255 255 255);
 }
 
 /* ------------------------------------------------------------
@@ -56,10 +57,11 @@
   display: none;
 }
 
-/* コンテンツページのタグを rounded-full・text-sm に統一 */
+/* 記事ページのタグ（HugoBloxデフォルト）を rounded-full・text-sm に統一。
+   tag-cloud.html / terms.html はテンプレート側でクラスを持つため対象外。 */
 div.flex.justify-center a[href^="/tags/"] {
-  border-radius: 9999px !important;
-  font-size: 0.875rem !important; /* text-sm */
+  border-radius: 9999px;
+  font-size: 0.875rem; /* text-sm */
 }
 
 /* タグとページタイトルの間に余白を追加 */
@@ -68,33 +70,13 @@ div.flex.justify-center:has(a[href^="/tags/"]) {
   margin-bottom: 0.5rem;
 }
 
-/* タグをarticle-metadataの直後に移動 */
-.article-tags {
-  order: -1;
-}
-.article-container {
-  display: flex;
-  flex-direction: column;
-}
-.article-header {
-  order: 0;
-}
-.article-metadata {
-  order: 1;
-}
-.article-tags {
-  order: 2;
-}
-.article-style {
-  order: 3;
-}
 
 /* ------------------------------------------------------------
    ナビバー：現在のページのリンクを強調表示
    Hugo は現在のページの <a> に aria-current="page" を付与する。
    ------------------------------------------------------------ */
-nav a[aria-current="page"],
-nav a.nav-active {
+header nav a[aria-current="page"],
+header nav a.nav-active {
   font-weight: 700;
-  color: var(--color-primary-600, #6366f1) !important;
+  color: var(--color-primary-600, #6366f1);
 }
