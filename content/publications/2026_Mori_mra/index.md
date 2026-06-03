@@ -10,7 +10,7 @@ authors:
   - Susumu Yoshizawa
 
 date: '2026-07-01T00:00:00Z'
-publishDate: '2026-12-31T00:00:00Z'
+publishDate: '2026-06-01T00:00:00Z'
 
 publication_types: ['article-journal']
 
