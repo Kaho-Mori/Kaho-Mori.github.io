@@ -8,12 +8,13 @@
 {{ $work := .work | default slice }}
 {{ $edu  := .education | default slice }}
 <div class="px-8 sm:px-12 lg:px-24">
+<div class="max-w-3xl mx-auto">
 
 {{/* ── Work section ── */}}
 {{- $work_html := "" -}}
 {{- if $work -}}
 <div id="hbx-work-section">
-<h2 class="text-3xl font-bold mb-8 text-gray-900 dark:text-white">Experience</h2>
+<h2 class="text-3xl font-bold mb-8 text-gray-900 dark:text-white text-center">Experience</h2>
 {{ range $work }}
   {{ $start    := .start | time.AsTime }}
   {{ $end_raw  := .end | default "" }}
@@ -49,7 +50,7 @@
 {{/* ── Education section ── */}}
 {{- if $edu -}}
 <div id="hbx-edu-section">
-<h2 class="text-3xl font-bold mb-8 text-gray-900 dark:text-white">Education</h2>
+<h2 class="text-3xl font-bold mb-8 text-gray-900 dark:text-white text-center">Education</h2>
 {{ range $edu }}
   {{ $start    := .start | time.AsTime }}
   {{ $end_raw  := .end | default "" }}
@@ -83,6 +84,7 @@
 {{- end -}}
 
 {{/* ── Reorder if is_edu_first ── */}}
+</div>{{/* end max-w-3xl */}}
 </div>{{/* end px wrapper */}}
 
 {{ if $is_edu_first }}
