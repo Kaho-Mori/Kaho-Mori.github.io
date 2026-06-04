@@ -44,18 +44,18 @@ links:
   - label: ORCID
     url: https://orcid.org/0009-0004-2388-8548
     icon: academicons/orcid
-  - label: Researchmap
-    url: https://orcid.org/0009-0004-2388-8548
-    icon: beaker
-  - label: GitHub
-    url: https://github.com/Kaho-Mori
-    icon: brands/github
+  #- label: Researchmap
+    #url: https://orcid.org/0009-0004-2388-8548
+    #icon: beaker
+  #- label: GitHub
+    #url: https://github.com/Kaho-Mori
+    #icon: brands/github
   - label: X (Twitter)
     url: https://twitter.com/kaho_mor_i
     icon: brands/x
-  - label: bluesky
-    url: https://orcid.org/0009-0004-2388-8548
-    icon: brands/bluesky
+  #- label: bluesky
+    #url: https://orcid.org/0009-0004-2388-8548
+    #icon: brands/bluesky
   # - icon: academicons/google-scholar
   #   url: https://scholar.google.com/citations?user=XXXXXXX
   #   label: Google Scholar
@@ -64,7 +64,7 @@ interests:
   - Marine Microbiology
   - Microbial Ecology
   - Aquarium
-  - small RNA
+  #- small RNA
   - Metagenomics
   - Metatranscriptomics
 
@@ -74,34 +74,34 @@ interests:
 education:
   - degree: Ph.D. in Natural Environmental Studies (in progress)
     institution: Graduate School of Frontier Sciences, The University of Tokyo
-    start: 2024-04-01
+    start: Apl 2024
   - degree: M.S. in Natural Environmental Studies
     institution: Graduate School of Frontier Sciences, The University of Tokyo
-    start: 2022-04-01
-    end: 2024-03-31
+    start: Apl 2022
+    end: Mar 2024
   - degree: B.S. in Science
     institution: Department of Biology, Faculty of Science, Ochanomizu University
-    start: 2018-04-01
-    end: 2022-03-31
+    start: Apl 2018
+    end: Mar 2022
 
 # -----------------------------------------------------------------------
 # 職歴
 # -----------------------------------------------------------------------
 work:
-  - position: Research Student (研究生)
-    company: Japan Agency for Marine-Earth Science and Technology (JAMSTEC)
+  - position: Visiting Research Student
+    company: JAMSTEC (MRU)
     company_url: https://www.jamstec.go.jp/
-    start: 2024-10-01
-    end: 2025-03-31
-  - position: Project Researcher — JST SPRING Program
+    start: Oct 1, 2024
+    end: Mar 31, 2025
+  - position: Project Student — JST SPRING Program
     company: Japan Science and Technology Agency (JST)
     company_url: https://www.jst.go.jp/jisedai/
-    start: 2024-04-01
-  - position: Temporary Research Assistant (臨時研究補助員)
-    company: JAMSTEC — Center for Bioscience Research and Education
+    start: Apl 1, 2024
+  - position: Temporary Research Assistant
+    company: JAMSTEC (CeBN)
     company_url: https://www.jamstec.go.jp/
-    start: 2022-06-01
-    end: 2026-03-31
+    start: Jun 1, 2022
+    end: Mar 1, 2026
 
 # -----------------------------------------------------------------------
 # 資金獲得
