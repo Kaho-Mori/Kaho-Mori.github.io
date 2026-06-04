@@ -101,7 +101,7 @@ hugoblox:
     sticky: true
     # Menu alignment
     # 【メニューの位置】center=中央揃え, left=左, right=右
-    align: center # left | center | right
+    align: right # left | center | right
     # Feature toggles
     search: true          # 検索ボタンの表示
     theme_toggle: true    # ダーク/ライト切替ボタンの表示
