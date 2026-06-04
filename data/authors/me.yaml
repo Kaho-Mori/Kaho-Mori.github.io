@@ -23,11 +23,9 @@ bio: |
   Feel free to [reach out](mailto:kaho-mori@aori.u-tokyo.ac.jp) for collaboration!
 
 affiliations:
-  - icon: building-office-2
-    name: Graduate School of Frontier Sciences, The University of Tokyo
+  - name: Graduate School of Frontier Sciences, The University of Tokyo
     url: https://www.k.u-tokyo.ac.jp/en/
-  - icon: building-office-2
-    name: Atmosphere and Ocean Research Institute
+  - name: Atmosphere and Ocean Research Institute
     url: https://www.aori.u-tokyo.ac.jp/english/
 
 # -----------------------------------------------------------------------
