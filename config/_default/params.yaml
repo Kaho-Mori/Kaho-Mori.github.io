@@ -22,11 +22,10 @@ hugoblox:
     tagline: ""
     # Site meta description for search engines and social sharing
     # 【SEO】Google検索結果などに表示されるサイトの説明文
-    description: "The highly-customizable Hugo Academic theme powered by HugoBlox
-      Kit. Easily create your personal academic website."
+    description: "Ph.D. student in marine microbiology at the Atmosphere and Ocean Research Institute, The University of Tokyo. Research on microbial ecology and biogeochemical cycles in the ocean."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
-      twitter: "GoOwnable" # 【SNS】Twitter/X ハンドル（@なし）。OGPタグに使われる
+      twitter: "kaho_mor_i" # 【SNS】Twitter/X ハンドル（@なし）。OGPタグに使われる
 
   # ────────────────────────────────────────────────────────────────────────────
   # THEME
