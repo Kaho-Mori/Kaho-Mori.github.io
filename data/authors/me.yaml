@@ -72,13 +72,16 @@ interests:
 education:
   - degree: Ph.D. in Environmental Studies (in progress)
     institution: Graduate School of Frontier Sciences, The University of Tokyo
+    institution_url: https://en.nenv.k.u-tokyo.ac.jp/
     start: 2024-04-01
   - degree: M.S. in Environmental Studies
     institution: Graduate School of Frontier Sciences, The University of Tokyo
+    institution_url: https://en.nenv.k.u-tokyo.ac.jp/
     start: 2022-04-01
     end: 2024-03-31
   - degree: B.S. in Science
     institution: Department of Biology, Faculty of Science, Ochanomizu University
+    institution_url: https://www.ocha.ac.jp/index.html
     start: 2018-04-01
     end: 2022-03-31
 
