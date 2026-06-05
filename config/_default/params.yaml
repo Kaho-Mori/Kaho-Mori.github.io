@@ -38,7 +38,7 @@ hugoblox:
     mode: system
     # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
     # 【テーマパック】data/themes/ 内のYAMLファイル名を指定（カスタムカラー定義）
-    pack: "cupcake"
+    pack: "default"
     # Optional: Override theme pack colors
     # 【アクセントカラー上書き】Tailwindカラー名("indigo","sky"等)かHEX("#6366f1")で指定
     colors:
@@ -95,13 +95,13 @@ hugoblox:
     enable: true
     # Header style variant
     # 【ナビバーのデザイン】navbar=標準, navbar-simple=シンプル, minimal=最小限
-    style: navbar # navbar | navbar-simple | minimal
+    style: minimal # navbar | navbar-simple | minimal
     # Stick to top on scroll
     # 【固定表示】trueにするとスクロールしてもナビバーが上に固定される
     sticky: true
     # Menu alignment
     # 【メニューの位置】center=中央揃え, left=左, right=右
-    align: right # left | center | right
+    align: center # left | center | right
     # Feature toggles
     search: true          # 検索ボタンの表示
     theme_toggle: true    # ダーク/ライト切替ボタンの表示
