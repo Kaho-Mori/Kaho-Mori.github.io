@@ -60,7 +60,12 @@ sections:
       text: |
         <div class="max-w-3xl mx-auto w-full">
 
-        - **バイオインフォマティクス技能者認定試験** — 合格（2021年）
+        - **バイオインフォマティクス技能者認定試験** — 合格 (Feb 2021)
+        - **Certification Card (Diving License)** — PADI, Open Water Diver (Jul 2018)
+        #- **Nationally Licensed Marine Diver** — 合格 (Feb 2021)
+        #- **Kimono Culture ???** — 合格 (Feb 2021)
+        #- **バイオインフォマティクス技能者認定試験** — 合格 (Feb 2021)
+
 
         </div>
     design:
