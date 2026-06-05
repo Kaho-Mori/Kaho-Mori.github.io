@@ -28,9 +28,10 @@ publication: '日本微生物生態学会誌, 第38巻1号, p.22–34'
 publication_short: '日本微生物生態学会誌 38(1)'
 
 links:
-  - name: PDF1
-    url_pdf: "38_22.pdf"
+  - name: PDF
+    url: "38_22.pdf"
     icon: document-text
+    icon_pack: heroicons
     
 abstract: ''
 
