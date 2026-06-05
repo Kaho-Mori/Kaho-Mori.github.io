@@ -95,7 +95,7 @@ hugoblox:
     enable: true
     # Header style variant
     # 【ナビバーのデザイン】navbar=標準, navbar-simple=シンプル, minimal=最小限
-    style: minimal # navbar | navbar-simple | minimal
+    style: navbar # navbar | navbar-simple | minimal
     # Stick to top on scroll
     # 【固定表示】trueにするとスクロールしてもナビバーが上に固定される
     sticky: true
