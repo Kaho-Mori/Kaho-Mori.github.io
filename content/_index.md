@@ -16,8 +16,10 @@ sections:
         interests: ''
     design:
       background:
-        gradient_mesh:
-          enable: true
+        image:
+          filename: bg_light.jpg
+          size: cover
+          position: center
       name:
         size: large
       avatar:

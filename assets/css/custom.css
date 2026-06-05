@@ -80,3 +80,9 @@ header nav a.nav-active {
   font-weight: 700;
   color: var(--color-primary-600, #6366f1);
 }
+
+/* ダークモード時にトップページの背景画像を切り替え */
+.dark .blox-resume-biography-3 [style*="bg_light.jpg"],
+.dark section[style*="bg_light.jpg"] {
+  background-image: url('/media/bg_dark.jpg') !important;
+}
