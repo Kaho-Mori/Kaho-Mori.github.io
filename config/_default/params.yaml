@@ -95,7 +95,7 @@ hugoblox:
     enable: true
     # Header style variant
     # 【ナビバーのデザイン】navbar=標準, navbar-simple=シンプル, minimal=最小限
-    style: navbar # navbar | navbar-simple | minimal
+    style: navbar-simple # navbar | navbar-simple | minimal
     # Stick to top on scroll
     # 【固定表示】trueにするとスクロールしてもナビバーが上に固定される
     sticky: true
@@ -130,7 +130,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   copyright:
     # Copyright notice - supports {year}, {name}, {license} placeholders
-    notice: "© {year} {name}. This work is licensed under {license}"
+    notice: "© 2024 {name}. This work is licensed under {license}"
     license:
       type: cc # cc | custom
       allow_derivatives: false
