@@ -27,6 +27,8 @@ publication_types: ['other']
 publication: '日本微生物生態学会誌, 第38巻1号, p.22–34'
 publication_short: '日本微生物生態学会誌 38(1)'
 
+url_pdf: "content/publications/urahara_2023_jsme/38_22.pdf"
+
 abstract: ''
 
 featured: false
