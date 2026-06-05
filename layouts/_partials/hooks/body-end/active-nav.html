@@ -20,21 +20,19 @@
     }
   });
 
-  // Swap hero background image for dark mode
-  var LIGHT_BG = null;
-  var DARK_BG = '/media/bg_dark.jpg';
-  function updateHeroBg() {
-    var el = document.querySelector('.home-section-bg');
-    if (!el) return;
-    var isDark = document.documentElement.classList.contains('dark');
-    if (!LIGHT_BG) {
-      LIGHT_BG = el.style.backgroundImage;
+  // Swap hero background image for dark mode (homepage only)
+  if (window.location.pathname === '/') {
+    var LIGHT_BG = null;
+    var DARK_BG = '/media/bg_dark.jpg';
+    function updateHeroBg() {
+      var el = document.querySelector('.home-section-bg');
+      if (!el) return;
+      var isDark = document.documentElement.classList.contains('dark');
+      if (!LIGHT_BG) { LIGHT_BG = el.style.backgroundImage; }
+      el.style.backgroundImage = isDark ? 'url(' + DARK_BG + ')' : LIGHT_BG;
     }
-    el.style.backgroundImage = isDark
-      ? 'url(' + DARK_BG + ')'
-      : LIGHT_BG;
+    updateHeroBg();
+    new MutationObserver(updateHeroBg).observe(document.documentElement, { attributeFilter: ['class'] });
   }
-  updateHeroBg();
-  new MutationObserver(updateHeroBg).observe(document.documentElement, { attributeFilter: ['class'] });
 })();
 </script>
