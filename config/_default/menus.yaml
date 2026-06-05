@@ -13,7 +13,7 @@ main:
   - name: Presentations
     url: /presentations/
     weight: 30
-  - name: Blog
+  - name: Note
     url: /blog/
     weight: 60
   - name: Tags

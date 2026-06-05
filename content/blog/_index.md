@@ -1,11 +1,11 @@
 ---
-title: Blog
+title: Note
 type: landing
 
 sections:
   - block: markdown
     content:
-      title: 'Blog'
+      title: 'Note'
       text: ''
     design:
       columns: '1'
