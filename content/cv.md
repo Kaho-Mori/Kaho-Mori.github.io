@@ -62,11 +62,7 @@ sections:
 
         - **バイオインフォマティクス技能者認定試験** — 合格 (Feb 2021)
         - **Certification Card (Diving License)** — PADI, Open Water Diver (Jul 2018)
-        #- **Nationally Licensed Marine Diver** — 合格 (Feb 2021)
-        #- **Kimono Culture ???** — 合格 (Feb 2021)
-        #- **バイオインフォマティクス技能者認定試験** — 合格 (Feb 2021)
-
-
+   
         </div>
     design:
       columns: '1'
