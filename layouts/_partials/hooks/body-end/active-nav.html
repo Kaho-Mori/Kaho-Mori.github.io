@@ -20,7 +20,14 @@
     }
   });
 
-  // Swap hero background image for dark mode (homepage only)
+  // Add caption below profile avatar
+  var avatar = document.querySelector('.author-avatar img, .avatar img, [class*="avatar"] img');
+  if (avatar) {
+    var caption = document.createElement('p');
+    caption.textContent = 'ISME19 @ Cape Town';
+    caption.style.cssText = 'text-align:center;font-size:0.75rem;color:#6b7280;margin-top:0.25rem;';
+    avatar.parentNode.insertAdjacentElement('afterend', caption);
+  }
   if (window.location.pathname === '/') {
     var LIGHT_BG = null;
     var DARK_BG = '/media/bg_dark.jpg';
