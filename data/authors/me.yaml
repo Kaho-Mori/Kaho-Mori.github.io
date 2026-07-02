@@ -42,9 +42,9 @@ links:
   - label: ORCID
     url: https://orcid.org/0009-0004-2388-8548
     icon: academicons/orcid
-  #- label: Researchmap
-    #url: https://orcid.org/0009-0004-2388-8548
-    #icon: beaker
+  - label: Researchmap
+    url: https://researchmap.jp/morikaho
+    icon: beaker
   #- label: GitHub
     #url: https://github.com/Kaho-Mori
     #icon: brands/github
