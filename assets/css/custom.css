@@ -71,6 +71,11 @@ div.flex.justify-center:has(a[href^="/tags/"]) {
 }
 
 
+/* SNSシェアボタンを非表示 */
+.share-box {
+  display: none;
+}
+
 /* ------------------------------------------------------------
    ナビバー：現在のページのリンクを強調表示
    Hugo は現在のページの <a> に aria-current="page" を付与する。
