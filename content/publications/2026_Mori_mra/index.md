@@ -30,7 +30,7 @@ tags:
 
 links:
   - name: MAG metadata
-    url: 
+    url: https://doi.org/10.5281/zenodo.21127192
     icon: academicons/zenodo
 
 featured: false
